@@ -1,8 +1,8 @@
 # Welcome to the D'Quran Mobile App Project!
-# Description
+## Description
 [BRIEF DESCRIPTION HERE]
 
-# Contents
+## Contents
 - [Description](#description)
 - [Quick Start](#quick-start)
 
