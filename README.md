@@ -1,6 +1,7 @@
 # Welcome to the D'Quran Mobile App Project!
 ## Description
 [BRIEF DESCRIPTION HERE]
+> *"Akhi please help do this" - Iqbal*
 
 ## Contents
 - [Description](#description)
