@@ -6,6 +6,7 @@
 ## Contents
 - [Description](#description)
 - [Quick Start](#quick-start)
+- [Before You Start](#before-you-start)
 
 ## Quick Start
 ### Requirements
@@ -27,3 +28,22 @@ git clone https://github.com/micheunderscore/dQuranProject
 2. Add the project to Unity Hub and open it.
 
 ***...and you can start working!***
+
+## Before You Start
+
+Please create a branch with the following naming scheme:
+```
+[type of change]/[name of change]
+
+Type of Changes:
+- feat = Feature or new function
+- fix = Bug or config fix
+- docs = Documentation changes
+- test = For testing purposes
+- perf = Optimazation changes which affect performance 
+- chore = Menial tasks that don't do much but are necessary
+
+Name of Change:
+All lowercase with dashes for spaces: i.e. this-is-a-branch-name
+```
+Example: `feat/new-game-mode`
