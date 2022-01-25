@@ -6,14 +6,14 @@
 ## Contents
 - [Description](#description)
 - [Quick Start](#quick-start)
-- [Before You Start](#before-you-start)
+- [Before You Start Working](#before-you-start-working)
 
 ## Quick Start
 ### Requirements
 - [Git](https://git-scm.com/downloads)
 - [Unity Hub + Unity](https://unity.com/download)
 
-### Before you start...
+### Installment Pre-requisites
 - Make sure the requirements above are properly installed.
 - Check that you have permissions to contribute to this repository.
 - Open the desired directory where you would like to clone the repository to and follow the steps in the gif below...
@@ -29,7 +29,7 @@ git clone https://github.com/micheunderscore/dQuranProject
 
 ### ...and you can start working!
 
-## Before You Start
+## Before You Start Working...
 
 Please create a branch with the following naming scheme:
 ```
