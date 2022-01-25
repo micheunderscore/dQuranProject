@@ -39,12 +39,12 @@ Please create a branch with the following naming scheme:
 ```
 
 ### Type of Changes:
-- feat = Feature or new function
-- fix = Bug or config fix
-- docs = Documentation changes
-- test = For testing purposes
-- perf = Optimazation changes which affect performance 
-- chore = Menial tasks that don't do much but are necessary
+- `feat`  = Feature or new function
+- `fix`   = Bug or config fix
+- `docs`  = Documentation changes
+- `test`  = For testing purposes
+- `perf`  = Optimazation changes which affect performance 
+- `chore` = Menial tasks that don't do much but are necessary
 
 ### Name of Change:
 - All lowercase with dashes for spaces: i.e. `this-is-a-branch-name`
