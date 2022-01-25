@@ -19,7 +19,7 @@
 
 ![](https://i.imgur.com/V1CwPfK.gif)
 
-1. Clone the repo
+1. Clone the repo by pasting the command below in the opened cmd window
 ```
 git clone https://github.com/micheunderscore/dQuranProject
 ```
