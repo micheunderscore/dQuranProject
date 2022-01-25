@@ -31,6 +31,8 @@ git clone https://github.com/micheunderscore/dQuranProject
 
 ## Before You Start Working...
 
+### DO NOT COMMIT CHANGES DIRECTLY ON THE MASTER BRANCH
+
 Please create a branch with the following naming scheme:
 ```
 [type of change]/[name of change]
