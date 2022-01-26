@@ -3,8 +3,8 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float speed;
-    [SerializeField] private float runDuration = 2f;
-    [SerializeField] private float currentTime;
+    private float runDuration;
+    private float currentTime;
     [SerializeField] private float loopOffset = 0f;
     private Rigidbody2D body;
     private Animator anim;
@@ -14,7 +14,7 @@ public class PlayerMovement : MonoBehaviour
     private void Awake() {
         body = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        currentTime = runDuration;
+        runDuration = 1.975f / (speed * 0.1f);
     }
 
     private void Update() {
