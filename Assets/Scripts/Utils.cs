@@ -12,6 +12,8 @@ public class JsonReader {
     }
 }
 
+// Class type declarations. Globally accessible.
+
 public class UserSave {
     public string username;
     public UserProgress[] progress;

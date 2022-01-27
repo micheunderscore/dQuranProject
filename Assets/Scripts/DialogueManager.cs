@@ -1,9 +1,11 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
 public class DialogueManager : MonoBehaviour
 {
+    public List<Vector3> uiPositions = new List<Vector3>();
     private Queue<Convo> sentences = new Queue<Convo>();
     private string path;
     private string jsonString;
@@ -15,6 +17,8 @@ public class DialogueManager : MonoBehaviour
 
     void Awake () {
         username = jsonReader.GetUsername();
+        uiPositions.Add(new Vector3(-175f, 6f, 0f));
+        uiPositions.Add(new Vector3(181f, -45f, 0f));
     }
     
     void Start() {
@@ -48,6 +52,17 @@ public class DialogueManager : MonoBehaviour
     }
 
     public void DisplayText (Convo conversation) {
+        int index = 0;
+        switch (conversation.name) {
+            case "@user":
+                index = 0;
+                break;
+            default:
+                index = 1;
+                break;
+        }
+        GameObject.FindGameObjectWithTag("DialogBox").transform.localPosition = uiPositions[index];
+
         dialogBox.text = conversation.sentence.Replace("@user", username);
         namePlate.text = conversation.name.Replace("@user", username);
     }
