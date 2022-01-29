@@ -1,21 +1,27 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class GameManager : MonoBehaviour {
     public GameObject[] characters;
-    // public static GameManager Instance;
+    public static GameManager Instance;
+    // TODO: Make this work for passing data between scenes
     public DialogueManager dialogueManager;
+    public GameObject dialogBox, wrongBox, gameBox, menuBox, letterObstacle, letterOutline;
+    public TextMeshProUGUI letterTitle;
     public GameState state;
     public bool started = false;
     
     public void Awake() {
-        // Instance = this;
+        Instance = this;
+        // TODO: Testing purpose only. Remove all past this line in Awake()
+        PlayerPrefs.SetString("username", "Jompot");
+        PlayerPrefs.SetString("userColor", "#000000");
     }
 
     public void Start () {
         state = GameState.Dialogue;
-        dialogueManager = FindObjectOfType<DialogueManager>();
         characters = GameObject.FindGameObjectsWithTag("Character");
     }
 
@@ -25,6 +31,12 @@ public class GameManager : MonoBehaviour {
             TriggerCharacters();
             started = true;
         }
+
+        dialogBox.SetActive(state == GameState.Dialogue);
+        wrongBox.SetActive(state == GameState.WrongAnswer);
+        gameBox.SetActive(state == GameState.Game);
+        letterOutline.SetActive(state == GameState.Game);
+        menuBox.SetActive(state == GameState.Menu);
     }
 
     public void GameTrigger() {
@@ -51,6 +63,19 @@ public class GameManager : MonoBehaviour {
         foreach (GameObject character in characters) {
             character.GetComponent<CharacterBehavior>().triggerMove(withCamera);
         }
+    }
+
+    public void RightAnswerTrigger () {
+        letterObstacle.SetActive(false);
+        GameTrigger();
+    }
+
+    public void RetryTrigger () {
+        state = GameState.Game;
+    }
+
+    public void WrongAnswerTrigger () {
+        state = GameState.WrongAnswer;
     }
 }
 // {

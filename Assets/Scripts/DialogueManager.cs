@@ -12,16 +12,15 @@ public class DialogueManager : MonoBehaviour
     private JsonReader jsonReader = new JsonReader();
     private Dialogue dialogue;
     private string username;
-    [SerializeField] public TextMeshProUGUI dialogBox;
-    [SerializeField] public TextMeshProUGUI namePlate;
+    [SerializeField] public TextMeshProUGUI dialogText, namePlate;
+    [SerializeField] public GameObject dialogBox;
 
     void Awake () {
         username = jsonReader.GetUsername();
-        uiPositions.Add(new Vector3(-175f, 6f, 0f));
-        uiPositions.Add(new Vector3(181f, -45f, 0f));
     }
     
     void Start() {
+        // TODO: Make this more dynamic v v v
         jsonString = jsonReader.Read("/Dialogues/level1.json");
         dialogue = JsonUtility.FromJson<Dialogue>(jsonString);
     }
@@ -43,7 +42,6 @@ public class DialogueManager : MonoBehaviour
         Convo sentence = sentences.Dequeue();
         
         if (sentence.name == "@game") {
-            Debug.Log("Is only game");
             return sentence.name;
         } else {
             DisplayText(sentence);
@@ -61,14 +59,17 @@ public class DialogueManager : MonoBehaviour
                 index = 1;
                 break;
         }
-        GameObject.FindGameObjectWithTag("DialogBox").transform.localPosition = uiPositions[index];
+        if (dialogBox.activeSelf) {
+            dialogBox.transform.localPosition = uiPositions[index];
+        }
 
-        dialogBox.text = conversation.sentence.Replace("@user", username);
+        dialogText.text = conversation.sentence.Replace("@user", username);
         namePlate.text = conversation.name.Replace("@user", username);
     }
 
     public void EndDialogue () {
-        dialogBox.text = "End of conversation";
+        // TODO: Remove this if no use
+        dialogText.text = "End of conversation";
         Debug.Log("End of conversation");
     }
 }

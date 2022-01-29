@@ -2,7 +2,7 @@
   "conversation": [
     {
       "name": "@user",
-      "sentence": "Adakah kamu perasan sesuatu? Alif yakin huruf Hijaiyah pertama ada berdekatan."
+      "sentence": "Adakah kamu perasan sesuatu? @user yakin huruf Hijaiyah pertama ada berdekatan."
     },
     {
       "name": "@game",

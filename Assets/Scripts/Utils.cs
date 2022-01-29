@@ -8,7 +8,7 @@ public class JsonReader {
     }
 
     public string GetUsername () {
-        return(JsonUtility.FromJson<UserSave>(Read("/Saves/userdata.json")).username);
+        return(PlayerPrefs.GetString("username","Jimpot"));
     }
 }
 
