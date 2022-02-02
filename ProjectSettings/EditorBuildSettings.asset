@@ -35,6 +35,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hijaiyah_List1.unity
     guid: 697c5ed1a95ddc24daa97435b083e065
+  - enabled: 1
+    path: Assets/Scenes/Hijaiyah_Alif.unity
+    guid: 42866cc3efeff9d42aebce9bd6cef4ac
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a4a4ac245a7d4094cbf317af61d058f5, type: 2}
     com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: b454f43cb125a63469a32a3f83e4aa7f, type: 2}
