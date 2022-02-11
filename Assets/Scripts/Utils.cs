@@ -8,7 +8,7 @@ public class JsonReader {
     }
 
     public string GetUsername () {
-        return(PlayerPrefs.GetString("username","Jimpot"));
+        return(PlayerPrefs.GetString("username","Jompot"));
     }
 }
 

@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     private string username;
     [SerializeField] public TextMeshProUGUI dialogText, namePlate;
     [SerializeField] public GameObject dialogBox;
+    [SerializeField] public int currentLevel = 1;
 
     void Awake () {
         username = jsonReader.GetUsername();
@@ -21,7 +22,7 @@ public class DialogueManager : MonoBehaviour
     
     void Start() {
         // TODO: Make this more dynamic v v v
-        jsonString = jsonReader.Read("/Dialogues/level1.json");
+        jsonString = jsonReader.Read("/Dialogues/level"+ currentLevel +".json");
         dialogue = JsonUtility.FromJson<Dialogue>(jsonString);
     }
 
@@ -69,7 +70,6 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue () {
         // TODO: Remove this if no use
-        dialogText.text = "End of conversation";
         Debug.Log("End of conversation");
     }
 }
