@@ -34,26 +34,46 @@ public class GameManager : MonoBehaviour {
             started = true;
         }
 
-        dialogBox.SetActive(state == GameState.Dialogue);
+        switch (state) {
+            case GameState.Dialogue:
+            case GameState.GameB:
+                letterOutline.SetActive(false);
+                dialogBox.SetActive(true);
+                break;
+            default:
+                letterOutline.SetActive(true);
+                dialogBox.SetActive(false);
+                break;
+        }
+
         wrongBox.SetActive(state == GameState.WrongAnswer);
-        gameBox.SetActive(state == GameState.Game);
-        letterOutline.SetActive(state == GameState.Game);
+
+        gameBox.SetActive(state == GameState.GameA);
+
         menuBox.SetActive(state == GameState.Menu);
 
-        bool stillMoving = false;
+        bool stillMoving = false; // TODO: Change stillMoving to state == GameState.Transition
 
         foreach (GameObject character in characters) {
             stillMoving = character.GetComponent<CharacterBehavior>().moving || stillMoving;
         }
         
         Debug.Log("Still Moving :" + stillMoving);
-        
+
+        // This is implementing trigger delay so that the user doesn't just spam through scenes
         if (Input.touchCount > 0 && triggerTimer <= 0f && !stillMoving) {
-            if (state == GameState.WrongAnswer) {
-                RetryTrigger();
-            } else if (state != GameState.Game) {
-                GameTrigger();
-                triggerTimer = 0.5f;
+            switch (state) {
+                case GameState.GameA:
+                case GameState.GameB:
+                    Debug.Log(state);
+                    break;
+                case GameState.WrongAnswer:
+                    RetryTrigger();
+                    break;
+                default:
+                    GameTrigger();
+                    triggerTimer = 0.5f;
+                    break;
             }
         } else {
             triggerTimer -= 1 * Time.deltaTime;
@@ -65,11 +85,14 @@ public class GameManager : MonoBehaviour {
             return;
         }
 
-        string nextScene = dialogueManager.DisplayNextSentence();
+        string nextScene = dialogueManager.DisplayNextSentence(); // TODO: Move this to the switch case brackets
 
         switch (nextScene) {
-            case "@game":
-                changeState(GameState.Game);
+            case "@gameA":
+                changeState(GameState.GameA);
+                break;
+            case "@gameB":
+                changeState(GameState.GameB);
                 break;
             case "@dialogue":
                 changeState(GameState.Dialogue);
@@ -88,13 +111,20 @@ public class GameManager : MonoBehaviour {
         }
     }
 
+    public void GameBTrigger () {
+        // TODO: Display correct placement obstacle
+        // TODO: Hide wrong placement Obstacle
+        // TODO: Trigger next event
+        GameTrigger();
+    }
+
     public void RightAnswerTrigger () {
         letterFilled.SetActive(true);
         GameTrigger();
     }
 
     public void RetryTrigger () {
-        changeState(GameState.Game);
+        changeState(GameState.GameA);
     }
 
     public void WrongAnswerTrigger () {
@@ -110,8 +140,9 @@ public class GameManager : MonoBehaviour {
 public enum GameState {
     Menu,
     Dialogue,
-    Transition,
-    Game,
+    Transition, // TODO: Use Transition game state
+    GameA,
+    GameB,
     RightAnswer,
     WrongAnswer
 }

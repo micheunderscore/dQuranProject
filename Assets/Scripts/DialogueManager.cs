@@ -1,4 +1,4 @@
-using System;
+using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
 
         Convo sentence = sentences.Dequeue();
         
-        if (sentence.name == "@game") {
+        if (Regex.IsMatch(sentence.name, "@game")) {
             return sentence.name;
         } else {
             DisplayText(sentence);
