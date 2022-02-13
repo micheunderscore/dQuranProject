@@ -1,0 +1,20 @@
+{
+  "conversation": [
+    {
+      "name": "Alif",
+      "sentence": "Tuah, terdapat seekor angsa di kolam itu yang mahu makan."
+    },
+    {
+      "name": "Alif",
+      "sentence": "@user, tolong berikan makanan kepadanya!"
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Yeay! Terima kasih, @user kerana memberi angsa makan. Kini kita telah jumpa huruf hijaiyah kita yang kedua!"
+    }
+  ]
+}
