@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour {
     // TODO: Make this work for passing data between scenes
     public DialogueManager dialogueManager;
     public GameObject dialogBox, wrongBox, gameBox, menuBox, letterFilled, letterOutline;
-    public TextMeshProUGUI letterTitle;
+    public TextMeshProUGUI letterTitle; // TODO: This is useless. Make it useful
     public GameState state;
     public bool started = false;
     private float triggerTimer = 0f;
@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour {
     public void Awake() {
         Instance = this;
         // TODO: Testing purpose only. Remove all past this line in Awake()
-        PlayerPrefs.SetString("username", "Alif");
+        PlayerPrefs.SetString("username", "Mel");
         PlayerPrefs.SetString("userColor", "#000000");
     }
 

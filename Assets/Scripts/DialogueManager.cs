@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
     public void DisplayText (Convo conversation) {
         int index = 0;
         switch (conversation.name) {
-            case "@user":
+            case "Alif":
                 index = 0;
                 break;
             default:
@@ -65,7 +65,8 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialogText.text = conversation.sentence.Replace("@user", username);
-        namePlate.text = conversation.name.Replace("@user", username);
+        // namePlate.text = conversation.name.Replace("@user", username);
+        // TODO: Figure out if this is needed or not
     }
 
     public void EndDialogue () {
