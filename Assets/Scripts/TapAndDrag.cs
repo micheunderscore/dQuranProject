@@ -9,8 +9,9 @@ public class TapAndDrag : MonoBehaviour {
     private Camera cameraMain;
     private Vector3 defPos;
     private EventSystem eventHandler;
+    private BoxCollider2D obsCollider;
     public bool rightAnswer = false;
-    public GameObject canvas;
+    public GameObject obstacle;
 
     private void Awake() {
         inputManager = InputManager.Instance;
@@ -20,6 +21,7 @@ public class TapAndDrag : MonoBehaviour {
 
     private void Start() {
         defPos = transform.position;
+        obsCollider = obstacle.GetComponent<BoxCollider2D>();
         eventHandler = GameObject.FindObjectOfType<EventSystem>();
     }
 
@@ -44,14 +46,11 @@ public class TapAndDrag : MonoBehaviour {
 
     public void EndTouch(Vector2 screenPosition) {
         if (!isTouched || screenPosition.x == Mathf.Infinity || screenPosition.y == Mathf.Infinity) return;
-        Debug.Log(transform.gameObject.name + " Triggered " + screenPosition + isTouched);
-        if (screenPosition.x < (cameraMain.pixelWidth / 2f) + 20f) {
+        if (obsCollider.OverlapPoint(cameraMain.ScreenToWorldPoint(screenPosition))) {
             if (rightAnswer) {
                 gameManager.RightAnswerTrigger();
-                Debug.Log("Right Answer");
             } else {
                 gameManager.WrongAnswerTrigger();
-                Debug.Log("Wrong Answer");
             }
         }
         isTouched = false;
@@ -62,14 +61,5 @@ public class TapAndDrag : MonoBehaviour {
     private void Update() {
         if (eventHandler.currentSelectedGameObject != null)
             isTouched = eventHandler.currentSelectedGameObject?.name == transform.parent.name;
-        // inputManager.OnStartTouch += Move;
-        // if (Input.touchCount > 0) {
-        //     transform.SetParent(canvas.transform);
-        //     Touch touch = Input.GetTouch(0);
-        //     Vector3 touchPosition = new Vector3(touch.position.x - cameraMain.pixelWidth / 2f, touch.position.y - cameraMain.pixelHeight / 2f, 0f);
-        //     transform.localPosition = touchPosition;
-        // } else {
-        //     transform.SetParent(defParent);
-        // }
     }
 }
