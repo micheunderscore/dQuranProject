@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using TMPro;
 
@@ -8,11 +7,15 @@ public class GameManager : MonoBehaviour {
     public static GameManager Instance;
     // TODO: Make this work for passing data between scenes
     public DialogueManager dialogueManager;
-    public GameObject dialogBox, wrongBox, gameBox, menuBox, letterFilled, letterOutline;
+    public GameObject dialogBox, wrongBox, gameBox, menuBox, pauseBox, pauseBtn, letterFilled, letterOutline, gameItem, gameUnfilled, gameFilled, optionalStart, optionalEnd;
+    public GameObject star1, star2, star3;
     public TextMeshProUGUI letterTitle; // TODO: This is useless. Make it useful
     public GameState state;
+    public GameState pastState = GameState.Menu;
     public bool started = false;
+    public int currentLevel = 1;
     private float triggerTimer = 0f;
+    private int score = 3;
 
     public void Awake() {
         Instance = this;
@@ -47,10 +50,14 @@ public class GameManager : MonoBehaviour {
         }
 
         wrongBox.SetActive(state == GameState.WrongAnswer);
-
         gameBox.SetActive(state == GameState.GameA);
-
-        menuBox.SetActive(state == GameState.Menu);
+        pauseBox.SetActive(state == GameState.Menu);
+        
+        star1.SetActive(score>=1);
+        star2.SetActive(score>=2);
+        star3.SetActive(score==3);
+        menuBox.SetActive(state == GameState.EndScreen);
+        pauseBtn.SetActive(state != GameState.Dialogue);
 
         bool stillMoving = false; // TODO: Change stillMoving to state == GameState.Transition
 
@@ -65,7 +72,7 @@ public class GameManager : MonoBehaviour {
             switch (state) {
                 case GameState.GameA:
                 case GameState.GameB:
-                    Debug.Log(state);
+                case GameState.Menu:
                     break;
                 case GameState.WrongAnswer:
                     RetryTrigger();
@@ -81,7 +88,7 @@ public class GameManager : MonoBehaviour {
     }
 
     public void GameTrigger() {
-        if (state == GameState.Menu) {
+        if (state == GameState.EndScreen) {
             return;
         }
 
@@ -100,7 +107,8 @@ public class GameManager : MonoBehaviour {
             case "@end":
             default:
                 TriggerCharacters(false);
-                changeState(GameState.Menu);
+                SaveSystem.CrossSceneInformation[currentLevel] = score;
+                changeState(GameState.EndScreen);
                 break;
         }
     }
@@ -112,18 +120,27 @@ public class GameManager : MonoBehaviour {
     }
 
     public void GameBTrigger () {
-        // TODO: Display correct placement obstacle
-        // TODO: Hide wrong placement Obstacle
-        // TODO: Trigger next event
+        if(gameFilled != null && gameUnfilled != null && gameItem != null) {
+            gameFilled.SetActive(true);
+            gameUnfilled.SetActive(false);
+            gameItem.SetActive(false);
+        }
         GameTrigger();
     }
 
     public void RightAnswerTrigger () {
         letterFilled.SetActive(true);
+        if(optionalEnd != null && optionalStart != null) {
+            optionalEnd.SetActive(true);
+            optionalStart.SetActive(false);
+        }
         GameTrigger();
     }
 
     public void RetryTrigger () {
+        if(score != 0) {
+            score -= 1;
+        }
         changeState(GameState.GameA);
     }
 
@@ -135,14 +152,26 @@ public class GameManager : MonoBehaviour {
         state = newState;
         triggerTimer = 0.5f;
     }
+
+    public void TriggerMenu () {
+        if (pastState != GameState.Menu) {
+            state = pastState;
+            pastState = GameState.Menu;
+        } else {
+            pastState = state;
+            state = GameState.Menu;
+        }
+    }
 }
 
 public enum GameState {
-    Menu,
+    EndScreen,
     Dialogue,
-    Transition, // TODO: Use Transition game state
+    Transition,
     GameA,
     GameB,
     RightAnswer,
-    WrongAnswer
+    WrongAnswer,
+
+    Menu
 }

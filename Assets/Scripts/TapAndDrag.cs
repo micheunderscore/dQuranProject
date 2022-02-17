@@ -12,6 +12,7 @@ public class TapAndDrag : MonoBehaviour {
     private BoxCollider2D obsCollider;
     public bool rightAnswer = false;
     public GameObject obstacle;
+    public bool isGameB = false;
 
     private void Awake() {
         inputManager = InputManager.Instance;
@@ -37,7 +38,8 @@ public class TapAndDrag : MonoBehaviour {
     public void Move(Vector2 screenPosition) {
         if (!isTouched || screenPosition.x == Mathf.Infinity || screenPosition.y == Mathf.Infinity) return;
         Vector3 screenCoordinates = new Vector3(Mathf.Min(screenPosition.x, cameraMain.pixelWidth), Mathf.Max(screenPosition.y, -100f), 0f);
-        transform.position = screenCoordinates;
+        Vector3 worldCoordinates = cameraMain.ScreenToWorldPoint(new Vector3(screenCoordinates.x, screenCoordinates.y, 0.3f));
+        transform.position = isGameB ? worldCoordinates : screenCoordinates;
     }
 
     public void StartTouch(Vector2 screenPosition) {
@@ -48,7 +50,11 @@ public class TapAndDrag : MonoBehaviour {
         if (!isTouched || screenPosition.x == Mathf.Infinity || screenPosition.y == Mathf.Infinity) return;
         if (obsCollider.OverlapPoint(cameraMain.ScreenToWorldPoint(screenPosition))) {
             if (rightAnswer) {
-                gameManager.RightAnswerTrigger();
+                if (!isGameB) {
+                    gameManager.RightAnswerTrigger();
+                } else {
+                    gameManager.GameBTrigger();
+                }
             } else {
                 gameManager.WrongAnswerTrigger();
             }
