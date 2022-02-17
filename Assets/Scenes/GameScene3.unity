@@ -12185,7 +12185,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\u0101lif"
+  m_text: ta
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a899ae98387df264ab640e92c0293520, type: 2}
   m_sharedMaterial: {fileID: -5393143571130077636, guid: a899ae98387df264ab640e92c0293520, type: 2}
