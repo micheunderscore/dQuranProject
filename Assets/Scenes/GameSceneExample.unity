@@ -12372,7 +12372,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   uiPositions:
   - {x: -212, y: 16, z: 0}
-  - {x: 181, y: -45, z: 0}
+  - {x: 20, y: -45, z: 0}
   dialogText: {fileID: 300714570}
   namePlate: {fileID: 372679475}
   dialogBox: {fileID: 1034051248}
@@ -12867,10 +12867,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f243500ad9b323f43878f161626036a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
-  currentTime: 0
-  loopOffset: 0
+  speed: 20
+  stops:
+  - 25
+  - 50
+  loopOffset: 5
   moving: 0
+  mainCharacter: 0
 --- !u!1001 &912898013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15720,9 +15723,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  currentTime: 0
+  stops:
+  - 22
+  - 50
   loopOffset: 10
   moving: 0
+  mainCharacter: 0
 --- !u!4 &1620099880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4920436523294360, guid: ddb716f4f4916bd49acf599e99be7b37, type: 3}

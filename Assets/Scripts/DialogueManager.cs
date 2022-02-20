@@ -65,6 +65,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialogText.text = conversation.sentence.Replace("@user", username);
+        namePlate.text = "- " + conversation.name;
     }
 
     public void EndDialogue () {

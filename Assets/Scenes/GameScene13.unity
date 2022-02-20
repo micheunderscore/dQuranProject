@@ -12998,7 +12998,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 20a2bce2a9793a142b14d2ab99041867, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13037,10 +13037,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f243500ad9b323f43878f161626036a4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 40
-  currentTime: 0
-  loopOffset: 0
+  speed: 20
+  stops:
+  - 32
+  - 50
+  loopOffset: 5
   moving: 0
+  mainCharacter: 0
 --- !u!1001 &912898013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15719,7 +15722,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 72de0c64f2c6a498096698322c976a67, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15806,9 +15809,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  currentTime: 0
+  stops:
+  - 26
+  - 50
   loopOffset: 10
   moving: 0
+  mainCharacter: 1
 --- !u!4 &1620099880 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4920436523294360, guid: ddb716f4f4916bd49acf599e99be7b37, type: 3}
