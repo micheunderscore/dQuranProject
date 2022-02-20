@@ -13014,7 +13014,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1732785806}
         m_TargetAssemblyTypeName: sceneManager, Assembly-CSharp
         m_MethodName: ReloadCurrentScene
         m_Mode: 1
@@ -13885,7 +13885,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1732785806}
         m_TargetAssemblyTypeName: sceneManager, Assembly-CSharp
         m_MethodName: ReloadCurrentScene
         m_Mode: 1
@@ -17385,6 +17385,7 @@ MonoBehaviour:
   star3: {fileID: 2025016608}
   letterTitle: {fileID: 1216126738}
   state: 0
+  storedState: 0
   pastState: 7
   started: 0
   currentLevel: 5
@@ -17560,7 +17561,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1732785806}
         m_TargetAssemblyTypeName: sceneManager, Assembly-CSharp
         m_MethodName: LoadToScene
         m_Mode: 5

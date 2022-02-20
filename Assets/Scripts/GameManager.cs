@@ -10,7 +10,7 @@ public class GameManager : MonoBehaviour {
     public GameObject dialogBox, wrongBox, gameBox, menuBox, pauseBox, pauseBtn, letterFilled, letterOutline, gameItem, gameUnfilled, gameFilled, optionalStart, optionalEnd;
     public GameObject star1, star2, star3;
     public TextMeshProUGUI letterTitle; // TODO: This is useless. Make it useful
-    public GameState state;
+    public GameState state, storedState;
     public GameState pastState = GameState.Menu;
     public bool started = false;
     public int currentLevel = 1;
@@ -43,6 +43,9 @@ public class GameManager : MonoBehaviour {
                 letterOutline.SetActive(false);
                 dialogBox.SetActive(true);
                 break;
+            case GameState.Transition:
+                dialogBox.SetActive(false);
+                break;
             default:
                 letterOutline.SetActive(true);
                 dialogBox.SetActive(false);
@@ -57,21 +60,28 @@ public class GameManager : MonoBehaviour {
         star2.SetActive(score>=2);
         star3.SetActive(score==3);
         menuBox.SetActive(state == GameState.EndScreen);
-        pauseBtn.SetActive(state != GameState.Dialogue);
+        pauseBtn.SetActive(state != GameState.Dialogue && state != GameState.Transition);
 
-        bool stillMoving = false; // TODO: Change stillMoving to state == GameState.Transition
+        bool stillMoving = false;
 
         foreach (GameObject character in characters) {
             stillMoving = character.GetComponent<CharacterBehavior>().moving || stillMoving;
         }
-        
-        Debug.Log("Still Moving :" + stillMoving);
+
+        if (stillMoving && state != GameState.Transition && state != GameState.EndScreen) {
+            storedState = state;
+            changeState(GameState.Transition);
+        } else if (!stillMoving && storedState != GameState.Transition) {
+            changeState(storedState);
+            storedState = GameState.Transition;
+        }
 
         // This is implementing trigger delay so that the user doesn't just spam through scenes
         if (Input.touchCount > 0 && triggerTimer <= 0f && !stillMoving) {
             switch (state) {
                 case GameState.GameA:
                 case GameState.GameB:
+                case GameState.Transition:
                 case GameState.Menu:
                     break;
                 case GameState.WrongAnswer:
@@ -108,6 +118,7 @@ public class GameManager : MonoBehaviour {
             default:
                 TriggerCharacters(false);
                 SaveSystem.CrossSceneInformation[currentLevel] = score;
+                SaveSystem.PassedGameProgress++;
                 changeState(GameState.EndScreen);
                 break;
         }
@@ -172,6 +183,5 @@ public enum GameState {
     GameB,
     RightAnswer,
     WrongAnswer,
-
     Menu
 }
