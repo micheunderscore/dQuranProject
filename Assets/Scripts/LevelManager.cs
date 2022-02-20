@@ -4,7 +4,7 @@ using UnityEngine;
 [System.Serializable]
 public class LevelManager : MonoBehaviour {
     public int[] levelProgress = new int[32];
-    public GameObject[] pages;
+    public Transform pages;
 
     public void Awake() {
         if (SaveSystem.CrossSceneInformation == null) SaveSystem.CrossSceneInformation = new int[32];
@@ -22,14 +22,13 @@ public class LevelManager : MonoBehaviour {
                 levelProgress[i] = passedData[i];
             }
         }
-
-        int layer = 0;
-        foreach (GameObject page in pages){
-            Transform panel = page.transform.Find("LevelPanel");
-            for (int i = 1; i <= 10; i++) {
-                panel.transform.Find("LevelButton" + i).gameObject.GetComponentInChildren<Star>().score = levelProgress[i + layer];
+        int count = 1;
+        // Load progress on pages
+        foreach (Transform page in pages){
+            foreach (Transform child in page.transform.Find("LevelPanel")) {
+                child.gameObject.GetComponentInChildren<Star>().score = levelProgress[count];
+                count += 1;
             }
-            layer += 10;
         }
     }
 
