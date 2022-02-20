@@ -2,9 +2,11 @@ using UnityEngine;
 
 [System.Serializable]
 public class LevelData {
-    public int[] levelProgress;
+    public int[] levelScores;
+    public int gameProgress;
 
     public LevelData (LevelManager level) {
-        levelProgress = level.levelProgress;
+        levelScores = level.levelScores;
+        gameProgress = level.gameProgress;
     }
 }

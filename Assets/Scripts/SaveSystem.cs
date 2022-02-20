@@ -3,6 +3,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 public static class SaveSystem {
     public static int[] CrossSceneInformation { get; set; }
+    public static int PassedGameProgress { get; set; }
 
     public static void SaveLevels (LevelManager level) {
         BinaryFormatter formatter = new BinaryFormatter();
