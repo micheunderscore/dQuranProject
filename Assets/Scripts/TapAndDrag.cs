@@ -43,7 +43,7 @@ public class TapAndDrag : MonoBehaviour {
     }
 
     public void StartTouch(Vector2 screenPosition) {
-        // Debug.Log(transform.gameObject.name + "StartTouch " + screenPosition);
+        // TODO: Remove this if useless
     }
 
     public void EndTouch(Vector2 screenPosition) {

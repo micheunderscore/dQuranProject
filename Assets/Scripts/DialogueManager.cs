@@ -70,6 +70,5 @@ public class DialogueManager : MonoBehaviour
 
     public void EndDialogue () {
         // TODO: Remove this if no use
-        Debug.Log("End of conversation");
     }
 }
