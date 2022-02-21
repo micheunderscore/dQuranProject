@@ -1,4 +1,4 @@
-using System;
+using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
@@ -12,9 +12,9 @@ public class DialogueManager : MonoBehaviour
     private JsonReader jsonReader = new JsonReader();
     private Dialogue dialogue;
     private string username;
-    [SerializeField] public TextMeshProUGUI dialogText, namePlate;
-    [SerializeField] public GameObject dialogBox;
-    [SerializeField] public int currentLevel = 1;
+    public TextMeshProUGUI dialogText, namePlate;
+    public GameObject dialogBox;
+    public GameManager gameManager;
 
     void Awake () {
         username = jsonReader.GetUsername();
@@ -22,7 +22,7 @@ public class DialogueManager : MonoBehaviour
     
     void Start() {
         // TODO: Make this more dynamic v v v
-        jsonString = jsonReader.Read("/Dialogues/level"+ currentLevel +".json");
+        jsonString = jsonReader.Read("/Dialogues/level"+ gameManager.currentLevel +".json");
         dialogue = JsonUtility.FromJson<Dialogue>(jsonString);
     }
 
@@ -42,7 +42,7 @@ public class DialogueManager : MonoBehaviour
 
         Convo sentence = sentences.Dequeue();
         
-        if (sentence.name == "@game") {
+        if (Regex.IsMatch(sentence.name, "@game")) {
             return sentence.name;
         } else {
             DisplayText(sentence);
@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
     public void DisplayText (Convo conversation) {
         int index = 0;
         switch (conversation.name) {
-            case "@user":
+            case "Alif":
                 index = 0;
                 break;
             default:
@@ -65,11 +65,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         dialogText.text = conversation.sentence.Replace("@user", username);
-        namePlate.text = conversation.name.Replace("@user", username);
+        namePlate.text = "- " + conversation.name;
     }
 
     public void EndDialogue () {
         // TODO: Remove this if no use
-        Debug.Log("End of conversation");
     }
 }

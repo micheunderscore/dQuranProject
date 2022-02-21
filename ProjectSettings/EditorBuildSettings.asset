@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
-  - enabled: 0
     path: Assets/Scenes/StartAppScene.unity
     guid: d4e580ab09c1a5242addedbf42e3fbfa
   - enabled: 0
@@ -35,6 +29,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Hijaiyah_List1.unity
     guid: 697c5ed1a95ddc24daa97435b083e065
+  - enabled: 0
+    path: Assets/Scenes/Hijaiyah_Alif.unity
+    guid: 42866cc3efeff9d42aebce9bd6cef4ac
+  - enabled: 1
+    path: Assets/Scenes/GameHome.unity
+    guid: f1a8b57977d241740a007f155d2d4514
   - enabled: 1
     path: Assets/Scenes/GameScene1.unity
     guid: 36f8af057daf1e3449b2f165c7b8f7c3
@@ -42,14 +42,46 @@ EditorBuildSettings:
     path: Assets/Scenes/GameScene2.unity
     guid: 2ca4b9466e77bf64b8f1cca9216ad5f9
   - enabled: 1
-    path: Assets/Scenes/Hijaiyah_Alif.unity
-    guid: 42866cc3efeff9d42aebce9bd6cef4ac
+    path: Assets/Scenes/GameScene3.unity
+    guid: e916437b687f65841b78380ade44d954
+  - enabled: 1
+    path: Assets/Scenes/GameScene4.unity
+    guid: a5cf8ba873ba9dc4ab78f9518d2dc47f
+  - enabled: 1
+    path: Assets/Scenes/GameScene5.unity
+    guid: 31738de2798344f429cf1552cdb8c94c
+  - enabled: 1
+    path: Assets/Scenes/GameScene6.unity
+    guid: b8d010bb308f93b43a4351aacdd1f5e3
+  - enabled: 1
+    path: Assets/Scenes/GameScene7.unity
+    guid: 2c18bf4a0c5942d45a8b775f143a8495
+  - enabled: 1
+    path: Assets/Scenes/GameScene8.unity
+    guid: e53b4bc3b1877d04bb110fd4813ccc26
+  - enabled: 1
+    path: Assets/Scenes/GameScene9.unity
+    guid: a10fb22ac4ed58d4ab4ce37558b8631e
+  - enabled: 1
+    path: Assets/Scenes/GameScene10.unity
+    guid: 4d689f2e19c76504d9483529c3a39387
+  - enabled: 1
+    path: Assets/Scenes/GameScene11.unity
+    guid: c3bacfde5bc91f34799507c1cd6271d0
+  - enabled: 1
+    path: Assets/Scenes/GameScene12.unity
+    guid: 27bb99c518ede6543a09eed72cb61010
+  - enabled: 1
+    path: Assets/Scenes/GameScene13.unity
+    guid: 89a691a3423c8d04989d845a6510c7c3
+  - enabled: 1
+    path: Assets/Scenes/GameScene14.unity
+    guid: 7c4164e091f614d4e8166850ffd44529
+  - enabled: 1
+    path: Assets/Scenes/GameScene15.unity
+    guid: 685eea736b3737d4591794e420a635a0
   m_configObjects:
-    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a4a4ac245a7d4094cbf317af61d058f5,
-      type: 2}
-    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000,
-      guid: b454f43cb125a63469a32a3f83e4aa7f, type: 2}
-    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000,
-      guid: ef66ceb928977b44193a2fb5d25e0875, type: 2}
-    com.unity.input.settings: {fileID: 11400000, guid: c966e56246519ef44a8f5990d9b5fb73,
-      type: 2}
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a4a4ac245a7d4094cbf317af61d058f5, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: b454f43cb125a63469a32a3f83e4aa7f, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: ef66ceb928977b44193a2fb5d25e0875, type: 2}
+    com.unity.input.settings: {fileID: 11400000, guid: c966e56246519ef44a8f5990d9b5fb73, type: 2}

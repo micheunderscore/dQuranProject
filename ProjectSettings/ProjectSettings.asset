@@ -8,7 +8,7 @@ PlayerSettings:
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 2
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -76,7 +76,7 @@ PlayerSettings:
   androidFullscreenMode: 1
   defaultIsNativeResolution: 1
   macRetinaSupport: 1
-  runInBackground: 1
+  runInBackground: 0
   captureSingleScreen: 0
   muteOtherAudioSources: 0
   Prepare IOS For Recording: 0
@@ -759,7 +759,23 @@ PlayerSettings:
   webGLLinkerTarget: 1
   webGLThreadsSupport: 0
   webGLDecompressionFallback: 0
-  scriptingDefineSymbols: {}
+  scriptingDefineSymbols:
+    Android: FG_GCTTS
+    CloudRendering: FG_GCTTS
+    EmbeddedLinux: FG_GCTTS
+    GameCoreScarlett: FG_GCTTS
+    GameCoreXboxOne: FG_GCTTS
+    Lumin: FG_GCTTS
+    Nintendo Switch: FG_GCTTS
+    PS4: FG_GCTTS
+    PS5: FG_GCTTS
+    Stadia: FG_GCTTS
+    Standalone: FG_GCTTS
+    WebGL: FG_GCTTS
+    Windows Store Apps: FG_GCTTS
+    XboxOne: FG_GCTTS
+    iPhone: FG_GCTTS
+    tvOS: FG_GCTTS
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}

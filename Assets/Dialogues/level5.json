@@ -1,0 +1,32 @@
+{
+  "conversation": [
+    {
+      "name": "Alif",
+      "sentence": "Tuah, sudah lama kita berjalan. Alif juga rasa haus teramat!"
+    },
+    {
+      "name": "Tuah",
+      "sentence": "Saya nampak ada sesuatu disebalik rumput tersebut. Mari kita melihat apa itu!"
+    },
+    {
+      "name": "Alif",
+      "sentence": "Wah! nasib kita amatlah baik, Tuah! Segelas air di sebalik rumput tersebut."
+    },
+    {
+      "name": "Alif",
+      "sentence": "@user, kami perlukan bantuan anda untuk mengambil gelas air itu."
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Yeay! Hilang rasa haus! Huruf Hijaiyah pertama harini telah dijumpai!"
+    },
+    {
+      "name": "Alif",
+      "sentence": "Ayuh, kita meneruskan perjalanan kita!"
+    }
+  ]
+}
