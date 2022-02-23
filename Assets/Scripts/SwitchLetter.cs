@@ -11,32 +11,50 @@ public class SwitchLetter : MonoBehaviour
 
     public GameObject[] hijaiyahLetter;
     public GameObject[] hijaiyahTitleText; 
-    public GameObject[] hijaiyahLetterSound;
+    public GameObject[] hijaiyahLetterVideoObject;
     public GameObject[] letterNavigationBtn;
     public GameObject[] prefabLetter;
     public VideoPlayer[] recitationLetterVideo;
-    public GameObject[] progressDialogueBox;
-    public GameObject[] progressStarLetter;
 
-    int indexLetter;
+    public int indexLetter;
     int indexPrevious;
-    public int newIndexTrigger = 0;
 
     void Start()
     {   
-        indexLetter = 0;
-        hijaiyahLetter[0].gameObject.SetActive(true);
-        hijaiyahTitleText[0].gameObject.SetActive(true);
+        indexLetter = PlayerPrefs.GetInt("listIndex", 0);
+        
+        hijaiyahLetter[indexLetter].gameObject.SetActive(true);
+        hijaiyahTitleText[indexLetter].gameObject.SetActive(true);
+
+        if (indexLetter == 0)
+        {
+            letterNavigationBtn[0].gameObject.SetActive(false);
+            letterNavigationBtn[1].gameObject.SetActive(true);
+        }
+
+        else if (indexLetter == 14)
+        {
+            letterNavigationBtn[0].gameObject.SetActive(true);
+            letterNavigationBtn[1].gameObject.SetActive(false);
+        }   
+
+        else if (indexLetter > 0 && indexLetter < 14)
+        {
+            letterNavigationBtn[0].gameObject.SetActive(true);
+            letterNavigationBtn[1].gameObject.SetActive(true); 
+        }        
+
+
+
     }
 
     void Update()
     {
 
-        
         // To reset index intialization at each frame so it wont get ahead or too low.
-        if (indexLetter >= 3)
+        if (indexLetter >= 14)
         {
-            indexLetter = 3;
+            indexLetter = 14;
         }    
 
         if (indexLetter <= 0)
@@ -44,47 +62,7 @@ public class SwitchLetter : MonoBehaviour
             indexLetter = 0; 
         }        
 
-        //Update score on load
-        //Have user attempt the exercise before?
-        if (newIndexTrigger > indexLetter)
-        {                
-            // To set star object as active
-            // Level 1
-            if(newIndexTrigger < 5)
-            {
-                for(int i = 0; i < newIndexTrigger; i++)
-                {
-                progressStarLetter[i].gameObject.SetActive(true);
-                }  
-            }
-
-            // Level 2
-            else if(newIndexTrigger > 4 && newIndexTrigger < 8)
-            {   
-                // Turning off level 1 star
-                for(int y = 0; y <= 4; y++)
-                {
-                    progressStarLetter[y].gameObject.SetActive(false);
-                }
-                // Turning on level 2 star
-                for(int z = 4; z < newIndexTrigger; z++)
-                {
-                    progressStarLetter[z].gameObject.SetActive(true);
-                }
-            }       
-        }
     }
-
-    void OnDestroy()
-    {
-        //This will happen whenever this object is destroyed, which includes scene changes
-        // as well as existing the programs.
-        Debug.Log ("Scene Object was destroyed.");
-
-        PlayerPrefs.SetInt("LetterScore", newIndexTrigger);
-    }
-
-    
 
     public void NextLetter()
     {
@@ -100,13 +78,13 @@ public class SwitchLetter : MonoBehaviour
             
         }
 
-        if (indexLetter == 3)
+        if (indexLetter == 14)
         {
             letterNavigationBtn[0].gameObject.SetActive(true);
             letterNavigationBtn[1].gameObject.SetActive(false);
         }      
         
-        else if (indexLetter > 0 && indexLetter < 3)
+        else if (indexLetter > 0 && indexLetter < 14)
         {
             letterNavigationBtn[0].gameObject.SetActive(true);
             letterNavigationBtn[1].gameObject.SetActive(true); 
@@ -114,9 +92,7 @@ public class SwitchLetter : MonoBehaviour
 
         indexPrevious = indexLetter - 1;
 
-        hijaiyahLetterSound[indexPrevious].gameObject.SetActive(false);
-
-        Debug.Log(indexLetter);
+        hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);
     }
 
     public void PreviousLetter()
@@ -138,7 +114,7 @@ public class SwitchLetter : MonoBehaviour
             letterNavigationBtn[1].gameObject.SetActive(true);
         }
 
-        else if (indexLetter > 0 && indexLetter < 3)
+        else if (indexLetter > 0 && indexLetter < 14)
         {
             letterNavigationBtn[0].gameObject.SetActive(true);
             letterNavigationBtn[1].gameObject.SetActive(true); 
@@ -146,7 +122,7 @@ public class SwitchLetter : MonoBehaviour
 
         indexPrevious = indexLetter + 1;
 
-        hijaiyahLetterSound[indexPrevious].gameObject.SetActive(false);
+        hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);
 
         Debug.Log(indexLetter);
     }
@@ -155,8 +131,8 @@ public class SwitchLetter : MonoBehaviour
     {
         for(int i = 0; i< hijaiyahLetter.Length; i++)
         {
-            hijaiyahLetterSound[i].gameObject.SetActive(false);
-            hijaiyahLetterSound[indexLetter].gameObject.SetActive(true);
+            hijaiyahLetterVideoObject[i].gameObject.SetActive(false);
+            hijaiyahLetterVideoObject[indexLetter].gameObject.SetActive(true);
             
             hijaiyahLetter[indexLetter].gameObject.SetActive(false);
         }
@@ -165,7 +141,7 @@ public class SwitchLetter : MonoBehaviour
 
     public void closeRecitationLetterOnClick()
     {
-        hijaiyahLetterSound[indexLetter].gameObject.SetActive(false);
+        hijaiyahLetterVideoObject[indexLetter].gameObject.SetActive(false);
             
         hijaiyahLetter[indexLetter].gameObject.SetActive(true);
     }
@@ -181,48 +157,57 @@ public class SwitchLetter : MonoBehaviour
         hijaiyahLetter[indexLetter] = Instantiate (prefabLetter[indexLetter]);
         hijaiyahLetter[indexLetter].gameObject.SetActive(true);
 
-        hijaiyahLetterSound[indexLetter].gameObject.SetActive(false);
+        hijaiyahLetterVideoObject[indexLetter].gameObject.SetActive(false);
 
     }
 
-    public void OnTriggerEnter2D (Collider2D collider)
+    public void letterToListOnClick()
     {   
-        //Load data from player prefs.
-        newIndexTrigger = PlayerPrefs.GetInt("LetterScore", 0);
-
-        // To check if user is attempting for first time    
-        if (newIndexTrigger == indexLetter)
+        // Level One
+        if (indexLetter >= 0 & indexLetter < 4)
         {
-            progressDialogueBox[newIndexTrigger].gameObject.SetActive(true);    
-            
-            // To set star object as active
-            // Level 1
-            if(newIndexTrigger < 5)
-            {
-                for(int i = 0; i < newIndexTrigger; i++)
-                {
-                progressStarLetter[i].gameObject.SetActive(true);
-                }  
-            }
-
-            // Level 2
-            else if(newIndexTrigger > 4 && newIndexTrigger < 8)
-            {   
-                // Turning off level 1 star
-                for(int y = 0; y <= 4; y++)
-                {
-                    progressStarLetter[y].gameObject.SetActive(false);
-                }
-                // Turning on level 2 star
-                for(int z = 4; z < newIndexTrigger; z++)
-                {
-                    progressStarLetter[z].gameObject.SetActive(true);
-                }
-            }         
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 0;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
         }
 
-        newIndexTrigger++;
-        PlayerPrefs.SetInt("LetterScore", newIndexTrigger);
-        Debug.Log("Trigger!");
+        // Level Two
+        else if (indexLetter > 3 & indexLetter < 7)
+        {
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 1;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
+        }
+
+        // Level Three
+        else if (indexLetter > 6 & indexLetter < 11)
+        {
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 2;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
+        }
+
+        // Level Four
+        else if (indexLetter > 10 & indexLetter < 15)
+        {
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 3;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
+        }
+
+
+        SceneManager.LoadScene("Hijaiyah_List");
+    }
+    
+        void OnDestroy()
+    {
+        //This will happen whenever this object is destroyed, which includes scene changes
+        // as well as existing the programs.
+        Debug.Log ("Scene Object was destroyed.");
+
+        indexLetter = 0;
+        PlayerPrefs.SetInt("listIndex", indexLetter);
+        Debug.Log("Your last index " + indexLetter );
+                
     }
 }

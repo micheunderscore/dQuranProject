@@ -7,6 +7,8 @@ TagManager:
   - Character
   - DialogBox
   - TextUI
+  - brushHijaiyahLetter
+  - pointTipHijaiyahLetter
   layers:
   - Default
   - TransparentFX

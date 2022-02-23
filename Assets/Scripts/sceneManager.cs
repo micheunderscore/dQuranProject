@@ -9,4 +9,10 @@ public class sceneManager : MonoBehaviour
     {
         SceneManager.LoadScene(sceneName);
     }
+
+    public void ExitDQuran()
+    {
+        Application.Quit();
+        Debug.Log("Go Away!");
+    }
 }

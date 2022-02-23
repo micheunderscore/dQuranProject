@@ -6,30 +6,42 @@ using UnityEngine.UI;
 public class SwitchIqra : MonoBehaviour
 {
 
-    public GameObject[] iqra1;
-    public GameObject[] iqra1NavBtn;
-    public GameObject[] iqraTxtBar;
-
+    public GameObject[] iqra1; //by page
     int indexIqraPage;
-    int indexTxtBar;
+
+    public GameObject[] iqra1NavBtn;
+    // separation by line
+    // text
+    public GameObject[] iqra1LineOne;
+    public GameObject[] iqra1LineTwo;
+    public GameObject[] iqra1LineThree;
+
+    // toggle text
+    public GameObject[] iqra1LineOneToggle;
+    public GameObject[] iqra1LineTwoToggle;
+    public GameObject[] iqra1LineThreeToggle;
+
+    // audio source
+    public AudioSource[] iqra1AudioLineOne;
+    public AudioSource[] iqra1AudioLineTwo;
+    public AudioSource[] iqra1AudioLineThree;
+
+    
 
 
     // Start is called before the first frame update
     void Start()
     {
         indexIqraPage = 0;
-        indexTxtBar = 0;
         iqra1[0].gameObject.SetActive(true);
-        iqraTxtBar[0].gameObject.SetActive(true);
-
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (indexIqraPage >= 2)
+        if (indexIqraPage >= 13)
         {
-            indexIqraPage = 2;
+            indexIqraPage = 13;
         }
 
         if (indexIqraPage <= 0)
@@ -39,7 +51,19 @@ public class SwitchIqra : MonoBehaviour
     }
 
     public void NextIqra()
-    {
+    {   
+        iqra1LineOneToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineTwoToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineThreeToggle[indexIqraPage].gameObject.SetActive(false);
+        
+        iqra1LineOne[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineTwo[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineThree[indexIqraPage].gameObject.SetActive(true);
+
+        iqra1AudioLineOne[indexIqraPage].Stop();
+        iqra1AudioLineTwo[indexIqraPage].Stop();
+        iqra1AudioLineThree[indexIqraPage].Stop();
+
         indexIqraPage++;
 
         for(int i = 0; i < iqra1.Length; i++)
@@ -48,13 +72,13 @@ public class SwitchIqra : MonoBehaviour
             iqra1[indexIqraPage].gameObject.SetActive(true);
         }
 
-            if (indexIqraPage == 2)
+            if (indexIqraPage == 13)
             {
                 iqra1NavBtn[0].gameObject.SetActive(true);
                 iqra1NavBtn[1].gameObject.SetActive(false);
             }
 
-            else if (indexIqraPage > 0 && indexIqraPage < 2)
+            else if (indexIqraPage > 0 && indexIqraPage < 13)
             {
                 iqra1NavBtn[0].gameObject.SetActive(true);
                 iqra1NavBtn[1].gameObject.SetActive(true);
@@ -64,6 +88,18 @@ public class SwitchIqra : MonoBehaviour
 
     public void PreviousIqra()
     {
+        iqra1LineOneToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineTwoToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineThreeToggle[indexIqraPage].gameObject.SetActive(false);
+        
+        iqra1LineOne[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineTwo[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineThree[indexIqraPage].gameObject.SetActive(true);
+        
+        iqra1AudioLineOne[indexIqraPage].Stop();
+        iqra1AudioLineTwo[indexIqraPage].Stop();
+        iqra1AudioLineThree[indexIqraPage].Stop();
+
         indexIqraPage--;
 
         for(int i = 0; i < iqra1.Length; i++)
@@ -78,7 +114,7 @@ public class SwitchIqra : MonoBehaviour
                 iqra1NavBtn[1].gameObject.SetActive(true);
             }
 
-            else if (indexIqraPage > 0 && indexIqraPage < 2)
+            else if (indexIqraPage > 0 && indexIqraPage < 13)
             {
                 iqra1NavBtn[0].gameObject.SetActive(true);
                 iqra1NavBtn[1].gameObject.SetActive(true);
@@ -87,14 +123,76 @@ public class SwitchIqra : MonoBehaviour
         Debug.Log(indexIqraPage);
     }
 
-    public void txtBarClicked()
+    // Line One 
+    public void iqraOneLineOneOnClicked()
     {
-        indexTxtBar++;
+        iqra1AudioLineOne[indexIqraPage].Play();
+        iqra1AudioLineTwo[indexIqraPage].Stop();
+        iqra1AudioLineThree[indexIqraPage].Stop();
 
-        for (int i = 0; i <= indexTxtBar; i++)
-        {
-            iqraTxtBar[i].gameObject.SetActive(true);
-        }
+        iqra1LineTwoToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineThreeToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineTwo[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineThree[indexIqraPage].gameObject.SetActive(true);
 
+        iqra1LineOne[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineOneToggle[indexIqraPage].gameObject.SetActive(true);
     }
+
+    public void iqraOneLineOneToggleOnClicked()
+    {   
+        iqra1AudioLineOne[indexIqraPage].Stop();       
+        
+        iqra1LineOneToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineOne[indexIqraPage].gameObject.SetActive(true);
+    }
+
+    //Line Two
+    public void iqraOneLineTwoOnClicked()
+    {
+        iqra1AudioLineOne[indexIqraPage].Stop();
+        iqra1AudioLineTwo[indexIqraPage].Play();
+        iqra1AudioLineThree[indexIqraPage].Stop();
+
+        iqra1LineOneToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineThreeToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineOne[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineThree[indexIqraPage].gameObject.SetActive(true);
+
+        iqra1LineTwoToggle[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineTwo[indexIqraPage].gameObject.SetActive(false);
+    }
+
+    public void iqraOneLineTwoToggleOnClicked()
+    {
+        iqra1AudioLineTwo[indexIqraPage].Stop();       
+           
+        iqra1LineTwoToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineTwo[indexIqraPage].gameObject.SetActive(true);
+    }    
+
+    // Line Three
+    public void iqraOneLineThreeOnClicked()
+    {
+        iqra1AudioLineOne[indexIqraPage].Stop();
+        iqra1AudioLineTwo[indexIqraPage].Stop();
+        iqra1AudioLineThree[indexIqraPage].Play();
+
+        iqra1LineOneToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineTwoToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineOne[indexIqraPage].gameObject.SetActive(true);
+        iqra1LineTwo[indexIqraPage].gameObject.SetActive(true);
+
+        iqra1LineThree[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineThreeToggle[indexIqraPage].gameObject.SetActive(true);
+    }
+
+    public void iqraOneLineThreeToggleOnClicked()
+    {
+        iqra1AudioLineThree[indexIqraPage].Stop();       
+
+        iqra1LineThreeToggle[indexIqraPage].gameObject.SetActive(false);
+        iqra1LineThree[indexIqraPage].gameObject.SetActive(true);
+    }
+
 }
