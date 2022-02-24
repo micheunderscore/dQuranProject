@@ -1,0 +1,24 @@
+{
+  "conversation": [
+    {
+      "name": "Alif",
+      "sentence": "Tuah, sudah lama kita berjalan. Mari berhenti dan cari makanan."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Tuah, terdapat sepotong tembikai di atas bangku tersebut!"
+    },
+    {
+      "name": "Tuah",
+      "sentence": "@user, boleh bantu kami mengambil sedikit tembikai tersebut?"
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Terima kasih, @user. Huruf Hijaiyah pertama kita untuk hari ini telah ditemui!"
+    }
+  ]
+}
