@@ -10,11 +10,11 @@
 - [Before You Start Working](#before-you-start-working)
 
 ## Versions
-**1.0.1 - Fixed bugs: Screen scaling issue for gamification level select**
-1.0.0 - RELEASE! -- Finalized all 3 modules and merged seamlessly into one cohesive app
-0.1.1 - Testing different levels with live touch controls
-0.0.2 - Gamification engine works now
-0.0.1 - Initial test build
+- **1.0.1 - Fixed bugs: Screen scaling issue for gamification level select**
+- 1.0.0 - RELEASE! -- Finalized all 3 modules and merged seamlessly into one cohesive app
+- 0.1.1 - Testing different levels with live touch controls
+- 0.0.2 - Gamification engine works now
+- 0.0.1 - Initial test build
 
 ## Quick Start
 ### Requirements
