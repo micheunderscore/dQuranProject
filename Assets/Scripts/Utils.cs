@@ -3,28 +3,30 @@ using System.Collections;
 using UnityEngine.Networking;
 using UnityEngine;
 public class JsonReader {
-    private string passedString;
     public string Read (string route) {
         string filePath = Path.Combine(Application.streamingAssetsPath + Path.DirectorySeparatorChar, route);
         string jsonString = "";
 
         Debug.Log ("UNITY:" + System.Environment.NewLine + filePath);
 
-        if (filePath.Contains ("://") || filePath.Contains (":///")) {
-            ReadFromAndroid(filePath);
-            jsonString = passedString;
-        } else {
-            jsonString = File.ReadAllText(filePath);
+        #if  UNITY_EDITOR || UNITY_IOS
+        jsonString = File.ReadAllText (filePath);
+ 
+        #elif UNITY_ANDROID
+        WWW reader = new WWW (filePath);
+        while (!reader.isDone) {
         }
+        jsonString = reader.text;
+        #endif
+ 
+        // LocalizationData loadedData = JsonUtility.FromJson<LocalizationData> (jsonString);
+ 
+        // for (int i = 0; i < loadedData.items.Length; i++) {
+        //     localizedTextDictionary.Add (loadedData.items [i].key, loadedData.items [i].value);
+        // }
+        Debug.Log ("Data loaded, dictionary contains: " + jsonString);
 
         return(jsonString);
-    }
-
-    public IEnumerable ReadFromAndroid (string filePath) {
-        UnityWebRequest www = UnityWebRequest.Get(filePath);       
-        yield return www.SendWebRequest();
-		passedString = www.downloadHandler.text;
-        Debug.Log("JSON DATA::: " + passedString);
     }
 
     public string GetUsername () {

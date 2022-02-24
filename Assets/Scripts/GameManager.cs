@@ -118,7 +118,7 @@ public class GameManager : MonoBehaviour {
             default:
                 TriggerCharacters(false);
                 SaveSystem.CrossSceneInformation[currentLevel] = score;
-                SaveSystem.PassedGameProgress++;
+                if (currentLevel >= SaveSystem.PassedGameProgress) SaveSystem.PassedGameProgress++;
                 changeState(GameState.EndScreen);
                 break;
         }
