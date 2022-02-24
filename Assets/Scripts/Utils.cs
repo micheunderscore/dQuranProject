@@ -1,7 +1,6 @@
 using System.IO;
-using System.Collections;
-using UnityEngine.Networking;
 using UnityEngine;
+
 public class JsonReader {
     public string Read (string route) {
         string filePath = Path.Combine(Application.streamingAssetsPath + Path.DirectorySeparatorChar, route);
@@ -18,12 +17,7 @@ public class JsonReader {
         }
         jsonString = reader.text;
         #endif
- 
-        // LocalizationData loadedData = JsonUtility.FromJson<LocalizationData> (jsonString);
- 
-        // for (int i = 0; i < loadedData.items.Length; i++) {
-        //     localizedTextDictionary.Add (loadedData.items [i].key, loadedData.items [i].value);
-        // }
+
         Debug.Log ("Data loaded, dictionary contains: " + jsonString);
 
         return(jsonString);

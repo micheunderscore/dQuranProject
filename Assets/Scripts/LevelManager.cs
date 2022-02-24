@@ -43,7 +43,4 @@ public class LevelManager : MonoBehaviour {
         SaveSystem.SaveLevels(this);
     }
 
-    public void ProgressGame () {
-        gameProgress++;
-    }
 }
