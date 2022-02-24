@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Video;
 
 
 public class SwitchLetter : MonoBehaviour
@@ -10,33 +11,58 @@ public class SwitchLetter : MonoBehaviour
 
     public GameObject[] hijaiyahLetter;
     public GameObject[] hijaiyahTitleText; 
-    public AudioSource[] hijaiyahLetterSound;
+    public GameObject[] hijaiyahLetterVideoObject;
     public GameObject[] letterNavigationBtn;
     public GameObject[] prefabLetter;
+    public VideoPlayer[] recitationLetterVideo;
 
-    int indexLetter;
+    public int indexLetter;
+    int indexPrevious;
 
     void Start()
-    {
-        indexLetter = 0;
-        hijaiyahLetter[0].gameObject.SetActive(true);
-        hijaiyahTitleText[0].gameObject.SetActive(true);
+    {   
+        indexLetter = PlayerPrefs.GetInt("listIndex", 0);
+        
+        hijaiyahLetter[indexLetter].gameObject.SetActive(true);
+        hijaiyahTitleText[indexLetter].gameObject.SetActive(true);
+
+        if (indexLetter == 0)
+        {
+            letterNavigationBtn[0].gameObject.SetActive(false);
+            letterNavigationBtn[1].gameObject.SetActive(true);
+        }
+
+        else if (indexLetter == 14)
+        {
+            letterNavigationBtn[0].gameObject.SetActive(true);
+            letterNavigationBtn[1].gameObject.SetActive(false);
+        }   
+
+        else if (indexLetter > 0 && indexLetter < 14)
+        {
+            letterNavigationBtn[0].gameObject.SetActive(true);
+            letterNavigationBtn[1].gameObject.SetActive(true); 
+        }        
+
+
+
     }
 
-    void UpdateLetter()
+    void Update()
     {
-        if (indexLetter >= 3)
+
+        // To reset index intialization at each frame so it wont get ahead or too low.
+        if (indexLetter >= 14)
         {
-            indexLetter = 3;
+            indexLetter = 14;
         }    
 
         if (indexLetter <= 0)
         {
             indexLetter = 0; 
-        }    
-                            
+        }        
+
     }
-    
 
     public void NextLetter()
     {
@@ -52,19 +78,21 @@ public class SwitchLetter : MonoBehaviour
             
         }
 
-        if (indexLetter == 3)
+        if (indexLetter == 14)
         {
             letterNavigationBtn[0].gameObject.SetActive(true);
             letterNavigationBtn[1].gameObject.SetActive(false);
         }      
         
-        else if (indexLetter > 0 && indexLetter < 3)
+        else if (indexLetter > 0 && indexLetter < 14)
         {
             letterNavigationBtn[0].gameObject.SetActive(true);
             letterNavigationBtn[1].gameObject.SetActive(true); 
         }
 
-        Debug.Log(indexLetter);
+        indexPrevious = indexLetter - 1;
+
+        hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);
     }
 
     public void PreviousLetter()
@@ -86,11 +114,15 @@ public class SwitchLetter : MonoBehaviour
             letterNavigationBtn[1].gameObject.SetActive(true);
         }
 
-        else if (indexLetter > 0 && indexLetter < 3)
+        else if (indexLetter > 0 && indexLetter < 14)
         {
             letterNavigationBtn[0].gameObject.SetActive(true);
             letterNavigationBtn[1].gameObject.SetActive(true); 
         }
+
+        indexPrevious = indexLetter + 1;
+
+        hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);
 
         Debug.Log(indexLetter);
     }
@@ -99,12 +131,24 @@ public class SwitchLetter : MonoBehaviour
     {
         for(int i = 0; i< hijaiyahLetter.Length; i++)
         {
-            hijaiyahLetterSound[i].gameObject.SetActive(false);
-            hijaiyahLetterSound[indexLetter].gameObject.SetActive(true);
+            hijaiyahLetterVideoObject[i].gameObject.SetActive(false);
+            hijaiyahLetterVideoObject[indexLetter].gameObject.SetActive(true);
+            
+            hijaiyahLetter[indexLetter].gameObject.SetActive(false);
         }
 
-        hijaiyahLetterSound[indexLetter].Play();
+    }
 
+    public void closeRecitationLetterOnClick()
+    {
+        hijaiyahLetterVideoObject[indexLetter].gameObject.SetActive(false);
+            
+        hijaiyahLetter[indexLetter].gameObject.SetActive(true);
+    }
+
+    public void playRecitationLetterOnClick()
+    {
+        recitationLetterVideo[indexLetter].Play();
     }
 
     public void RestartOnClick()
@@ -112,6 +156,58 @@ public class SwitchLetter : MonoBehaviour
         Destroy (hijaiyahLetter[indexLetter]);
         hijaiyahLetter[indexLetter] = Instantiate (prefabLetter[indexLetter]);
         hijaiyahLetter[indexLetter].gameObject.SetActive(true);
+
+        hijaiyahLetterVideoObject[indexLetter].gameObject.SetActive(false);
+
     }
 
+    public void letterToListOnClick()
+    {   
+        // Level One
+        if (indexLetter >= 0 & indexLetter < 4)
+        {
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 0;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
+        }
+
+        // Level Two
+        else if (indexLetter > 3 & indexLetter < 7)
+        {
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 1;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
+        }
+
+        // Level Three
+        else if (indexLetter > 6 & indexLetter < 11)
+        {
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 2;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
+        }
+
+        // Level Four
+        else if (indexLetter > 10 & indexLetter < 15)
+        {
+            // To set level upon exiting to List Menu
+            int indexLvlLetter = 3;
+            PlayerPrefs.SetInt("IndexLvlLetter", indexLvlLetter);
+        }
+
+
+        SceneManager.LoadScene("Hijaiyah_List");
+    }
+    
+        void OnDestroy()
+    {
+        //This will happen whenever this object is destroyed, which includes scene changes
+        // as well as existing the programs.
+        Debug.Log ("Scene Object was destroyed.");
+
+        indexLetter = 0;
+        PlayerPrefs.SetInt("listIndex", indexLetter);
+        Debug.Log("Your last index " + indexLetter );
+                
+    }
 }
