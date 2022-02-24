@@ -1,3 +1,4 @@
+using System.IO;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class DialogueManager : MonoBehaviour
     private JsonReader jsonReader = new JsonReader();
     private Dialogue dialogue;
     private string username;
-    public TextMeshProUGUI dialogText, namePlate;
+    private TextMeshProUGUI dialogText, namePlate;
     public GameObject dialogBox;
     public GameManager gameManager;
 
@@ -21,9 +22,11 @@ public class DialogueManager : MonoBehaviour
     }
     
     void Start() {
-        // TODO: Make this more dynamic v v v
-        jsonString = jsonReader.Read("/Dialogues/level"+ gameManager.currentLevel +".json");
+        jsonString = jsonReader.Read("Dialogues" + Path.DirectorySeparatorChar + "level"+ gameManager.currentLevel +".json");
         dialogue = JsonUtility.FromJson<Dialogue>(jsonString);
+
+        dialogText = dialogBox.transform.Find("DialogText").GetComponent<TextMeshProUGUI>();
+        namePlate = dialogBox.transform.Find("NamePlate").GetComponent<TextMeshProUGUI>();
     }
 
     public void StartDialogue () {

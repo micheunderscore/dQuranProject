@@ -7,7 +7,7 @@ public static class SaveSystem {
 
     public static void SaveLevels (LevelManager level) {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.persistentDataPath + "/player.dq";
+        string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "player.dq";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         LevelData data = new LevelData(level);
@@ -17,7 +17,7 @@ public static class SaveSystem {
     }
 
     public static LevelData LoadLevel () {
-        string path = Application.persistentDataPath + "/player.dq";
+        string path = Application.persistentDataPath + Path.DirectorySeparatorChar + "player.dq";
         if(File.Exists(path)) {
             BinaryFormatter formatter = new BinaryFormatter();
             FileStream stream = new FileStream(path, FileMode.Open);

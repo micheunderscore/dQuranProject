@@ -1,4 +1,3 @@
-using System;
 using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
@@ -12,7 +11,7 @@ public class LevelManager : MonoBehaviour {
     public void Awake() {
         if (SaveSystem.CrossSceneInformation == null) SaveSystem.CrossSceneInformation = new int[32];
         if (SaveSystem.PassedGameProgress == 0) SaveSystem.PassedGameProgress = 1;
-        if (!File.Exists(Application.persistentDataPath + "/player.dq")) return;
+        if (!File.Exists(Application.persistentDataPath + Path.DirectorySeparatorChar + "player.dq")) return;
         LevelData data = SaveSystem.LoadLevel();
         levelScores = data.levelScores;
         gameProgress = data.gameProgress;
@@ -35,7 +34,6 @@ public class LevelManager : MonoBehaviour {
             foreach (Transform child in page.transform.Find("LevelPanel")) {
                 child.gameObject.GetComponentInChildren<Star>().score = levelScores[count];
                 child.gameObject.GetComponent<Button>().interactable = count <= gameProgress;
-                Debug.Log(child.name + ": #" + count + " >>>" + Convert.ToBoolean(count <= gameProgress));
                 count += 1;
             }
         }
@@ -45,7 +43,4 @@ public class LevelManager : MonoBehaviour {
         SaveSystem.SaveLevels(this);
     }
 
-    public void ProgressGame () {
-        gameProgress++;
-    }
 }
