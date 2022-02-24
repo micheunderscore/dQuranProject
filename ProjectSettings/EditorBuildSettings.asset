@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/StartAppScene.unity
     guid: d4e580ab09c1a5242addedbf42e3fbfa
   - enabled: 1
@@ -23,15 +23,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hijaiyah_List.unity
     guid: 697c5ed1a95ddc24daa97435b083e065
-  - enabled: 0
-    path: Assets/Scenes/Hijaiyah_Alif.unity
-    guid: 42866cc3efeff9d42aebce9bd6cef4ac
-  - enabled: 1
-    path: Assets/Scenes/GameHome.unity
-    guid: f1a8b57977d241740a007f155d2d4514
   - enabled: 1
     path: Assets/Scenes/Hijaiyah Level.unity
     guid: 42866cc3efeff9d42aebce9bd6cef4ac
+  - enabled: 1
+    path: Assets/Scenes/GameHome.unity
+    guid: 3d197ade52b7fee43a243fef21283c47
   - enabled: 1
     path: Assets/Scenes/GameScene1.unity
     guid: 36f8af057daf1e3449b2f165c7b8f7c3
