@@ -25,13 +25,13 @@ public class switchListLetter : MonoBehaviour
             listNavBtn[1].gameObject.SetActive(true);
         }
 
-        else if (indexLvl == 3)
+        else if (indexLvl == 7)
         {
             listNavBtn[0].gameObject.SetActive(true);
             listNavBtn[1].gameObject.SetActive(false);
         }
 
-        else if (indexLvl > 0 && indexLvl < 3)
+        else if (indexLvl > 0 && indexLvl < 7)
         {
             listNavBtn[0].gameObject.SetActive(true);
             listNavBtn[1].gameObject.SetActive(true);
@@ -42,9 +42,9 @@ public class switchListLetter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(indexLvl >= 3)
+        if(indexLvl >= 7)
         {
-            indexLvl = 3;
+            indexLvl = 7;
         }
 
         if(indexLvl <= 0)
@@ -63,13 +63,13 @@ public class switchListLetter : MonoBehaviour
             listLevelSelect[indexLvl].gameObject.SetActive(true);
         }
 
-        if(indexLvl == 3)
+        if(indexLvl == 7)
         {
             listNavBtn[0].gameObject.SetActive(true);
             listNavBtn[1].gameObject.SetActive(false);
         }
 
-        else if (indexLvl > 0 && indexLvl < 3)
+        else if (indexLvl > 0 && indexLvl < 7)
         {
             listNavBtn[0].gameObject.SetActive(true);
             listNavBtn[1].gameObject.SetActive(true);            
@@ -94,7 +94,7 @@ public class switchListLetter : MonoBehaviour
             listNavBtn[1].gameObject.SetActive(true);
         }
 
-        else if (indexLvl > 0 && indexLvl < 3)
+        else if (indexLvl > 0 && indexLvl < 7)
         {
             listNavBtn[0].gameObject.SetActive(true);
             listNavBtn[1].gameObject.SetActive(true);            
