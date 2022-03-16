@@ -1,28 +1,37 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Tilemaps;
 
 public class Parallax : MonoBehaviour
 {
-    private float length, startPos;
-    public GameObject cam;
-    public float parallaxEffect;
+    public float speed = 4f;
+    private Vector3 startPosition;
+
+    public GameObject foreground;
+    public GameObject duplicate;
+
 
     void Start()
     {
-     startPos = transform.position.x;
-        length = GetComponent<SpriteRenderer>().bounds.size.x;
+        startPosition = transform.position;
     }
 
-    // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        float temp = (cam.transform.position.x*(1 - parallaxEffect));
-        float distance =  (cam.transform.position.x * parallaxEffect);
+        transform.Translate(translation:Vector3.left*speed*Time.deltaTime);
 
-        transform.position = new Vector3 (startPos + distance, transform.position.y, transform.position.z);
-    
-        if (temp > startPos + length) startPos += length;
-        else if  (temp < startPos - length) startPos-= length;
+        if (transform.position.x > -72 && transform.position.x < -74 )
+        {
+            duplicate = Instantiate(foreground, new Vector3(37, 0, 0), Quaternion.identity);
+        }
+
+        if (transform.position.x == -110.99)
+        {
+            Destroy (duplicate);
+            transform.position = startPosition;
+        }
     }
 }
+
+   
