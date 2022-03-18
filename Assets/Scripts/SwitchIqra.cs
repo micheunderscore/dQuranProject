@@ -11,6 +11,7 @@ public class SwitchIqra : MonoBehaviour
 
     public GameObject[] iqra1NavBtn;
     // separation by line
+    
     // text
     public GameObject[] iqra1LineOne;
     public GameObject[] iqra1LineTwo;
@@ -39,9 +40,9 @@ public class SwitchIqra : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (indexIqraPage >= 13)
+        if (indexIqraPage >= 26)
         {
-            indexIqraPage = 13;
+            indexIqraPage = 26;
         }
 
         if (indexIqraPage <= 0)
@@ -72,13 +73,13 @@ public class SwitchIqra : MonoBehaviour
             iqra1[indexIqraPage].gameObject.SetActive(true);
         }
 
-            if (indexIqraPage == 13)
+            if (indexIqraPage == 26)
             {
                 iqra1NavBtn[0].gameObject.SetActive(true);
                 iqra1NavBtn[1].gameObject.SetActive(false);
             }
 
-            else if (indexIqraPage > 0 && indexIqraPage < 13)
+            else if (indexIqraPage > 0 && indexIqraPage < 26)
             {
                 iqra1NavBtn[0].gameObject.SetActive(true);
                 iqra1NavBtn[1].gameObject.SetActive(true);
@@ -114,7 +115,7 @@ public class SwitchIqra : MonoBehaviour
                 iqra1NavBtn[1].gameObject.SetActive(true);
             }
 
-            else if (indexIqraPage > 0 && indexIqraPage < 13)
+            else if (indexIqraPage > 0 && indexIqraPage < 26)
             {
                 iqra1NavBtn[0].gameObject.SetActive(true);
                 iqra1NavBtn[1].gameObject.SetActive(true);
@@ -130,11 +131,15 @@ public class SwitchIqra : MonoBehaviour
         iqra1AudioLineTwo[indexIqraPage].Stop();
         iqra1AudioLineThree[indexIqraPage].Stop();
 
+        //Close Toggle for All other clicked line
         iqra1LineTwoToggle[indexIqraPage].gameObject.SetActive(false);
         iqra1LineThreeToggle[indexIqraPage].gameObject.SetActive(false);
+        
+        //Set Active Their Original img
         iqra1LineTwo[indexIqraPage].gameObject.SetActive(true);
         iqra1LineThree[indexIqraPage].gameObject.SetActive(true);
 
+        //Turn off original line one img and set active toggle img.
         iqra1LineOne[indexIqraPage].gameObject.SetActive(false);
         iqra1LineOneToggle[indexIqraPage].gameObject.SetActive(true);
     }
