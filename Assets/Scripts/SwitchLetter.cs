@@ -27,12 +27,28 @@ public class SwitchLetter : MonoBehaviour
     void Start()
     {   
         currentScore = PlayerPrefs.GetInt("LetterScore", 0);
-
         indexLetter = PlayerPrefs.GetInt("listIndex", 0);
         
-        hijaiyahLetter[indexLetter].gameObject.SetActive(true);
-        hijaiyahTitleText[indexLetter].gameObject.SetActive(true);
+        if (currentScore < indexLetter)
+        {
+            hijaiyahLetter[currentScore].gameObject.SetActive(true);
+            hijaiyahTitleText[currentScore].gameObject.SetActive(true);
+        }
 
+        else if (currentScore >= indexLetter && currentScore < 29)
+        {
+            //indexLetter = currentScore;
+
+            hijaiyahLetter[indexLetter].gameObject.SetActive(true);
+            hijaiyahTitleText[indexLetter].gameObject.SetActive(true);
+        }
+
+        else if (currentScore == 28)
+        {
+            hijaiyahLetter[0].gameObject.SetActive(true);
+            hijaiyahTitleText[0].gameObject.SetActive(true);           
+        }
+        
         if (indexLetter == 0)
         {
             letterNavigationBtn[0].gameObject.SetActive(false);
@@ -49,10 +65,7 @@ public class SwitchLetter : MonoBehaviour
         {
             letterNavigationBtn[0].gameObject.SetActive(true);
             letterNavigationBtn[1].gameObject.SetActive(true); 
-        }        
-
-
-
+        }     
     }
 
     void Update()
@@ -74,33 +87,38 @@ public class SwitchLetter : MonoBehaviour
 
     public void NextLetter()
     {
-        indexLetter++;
-
-        for (int i = 0; i < hijaiyahLetter.Length; i++)
+        if (currentScore > indexLetter )
         {
-            hijaiyahLetter[i].gameObject.SetActive(false);
-            hijaiyahTitleText[i].gameObject.SetActive(false);
+            indexLetter++;
 
-            hijaiyahLetter[indexLetter].gameObject.SetActive(true);
-            hijaiyahTitleText[indexLetter].gameObject.SetActive(true);
+            for (int i = 0; i < hijaiyahLetter.Length; i++)
+            {
+                hijaiyahLetter[i].gameObject.SetActive(false);
+                hijaiyahTitleText[i].gameObject.SetActive(false);
+
+                hijaiyahLetter[indexLetter].gameObject.SetActive(true);
+                hijaiyahTitleText[indexLetter].gameObject.SetActive(true);
+                
+            }
+
+            if (indexLetter == 27)
+            {
+                letterNavigationBtn[0].gameObject.SetActive(true);
+                letterNavigationBtn[1].gameObject.SetActive(false);
+            }      
             
+            else if (indexLetter > 0 && indexLetter < 27)
+            {
+                letterNavigationBtn[0].gameObject.SetActive(true);
+                letterNavigationBtn[1].gameObject.SetActive(true); 
+            }
+
+            indexPrevious = indexLetter - 1;
+
+            hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);            
         }
 
-        if (indexLetter == 27)
-        {
-            letterNavigationBtn[0].gameObject.SetActive(true);
-            letterNavigationBtn[1].gameObject.SetActive(false);
-        }      
-        
-        else if (indexLetter > 0 && indexLetter < 27)
-        {
-            letterNavigationBtn[0].gameObject.SetActive(true);
-            letterNavigationBtn[1].gameObject.SetActive(true); 
-        }
 
-        indexPrevious = indexLetter - 1;
-
-        hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);
     }
 
     public void PreviousLetter()
@@ -256,7 +274,6 @@ public class SwitchLetter : MonoBehaviour
         // as well as existing the programs.
         Debug.Log ("Scene Object was destroyed.");
 
-        indexLetter = 0;
         PlayerPrefs.SetInt("listIndex", indexLetter);
         Debug.Log("Your last index " + indexLetter );
                 

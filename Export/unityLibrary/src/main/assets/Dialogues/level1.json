@@ -1,0 +1,24 @@
+{
+  "conversation": [
+    {
+      "name": "Alif",
+      "sentence": "Adakah kamu perasan sesuatu? Alif yakin huruf Hijaiyah pertama ada berdekatan."
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Tuah",
+      "sentence": "Yeay! Huruf pertama sudah dijumpai. Bagus sekali, @user! Kayu ini bentuk sama huruf Hijaiyah 'ālif'."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Betul Tuah, kayu ini berdiri tegak seperti huruf Hijaiyah 'ālif'"
+    },
+    {
+      "name": "Alif",
+      "sentence": "Ayuh, kita cari huruf Hijaiyah yang seterusnya."
+    }
+  ]
+}

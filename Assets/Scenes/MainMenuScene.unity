@@ -26126,9 +26126,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1218162300}
-        m_TargetAssemblyTypeName: sceneMenuController, Assembly-CSharp
-        m_MethodName: menuToSceneModule
+      - m_Target: {fileID: 1218162302}
+        m_TargetAssemblyTypeName: sceneManager, Assembly-CSharp
+        m_MethodName: LoadToScene
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

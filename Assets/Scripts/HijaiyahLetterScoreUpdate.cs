@@ -881,7 +881,7 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[12].gameObject.SetActive(false);
                 progressStarLetter[11].gameObject.SetActive(false);
 
-                progressStarLetter[9].gameObject.SetActive(false);                        
+                progressStarLetter[10].gameObject.SetActive(false);                        
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
@@ -964,7 +964,6 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
 
-                progressStarLetter[7].gameObject.SetActive(false);
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(true);
@@ -1003,8 +1002,7 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 
@@ -1043,8 +1041,7 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 
@@ -1079,12 +1076,11 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[12].gameObject.SetActive(false);
                 progressStarLetter[11].gameObject.SetActive(false);
 
-                progressStarLetter[9].gameObject.SetActive(false);                        
+                progressStarLetter[10].gameObject.SetActive(false);                        
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 
@@ -1119,12 +1115,11 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[12].gameObject.SetActive(false);
                 progressStarLetter[11].gameObject.SetActive(false);
 
-                progressStarLetter[9].gameObject.SetActive(false);                        
+                progressStarLetter[10].gameObject.SetActive(false);                        
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 
@@ -2007,7 +2002,7 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[12].gameObject.SetActive(false);
                 progressStarLetter[11].gameObject.SetActive(false);
 
-                progressStarLetter[9].gameObject.SetActive(false);                        
+                progressStarLetter[10].gameObject.SetActive(false);                        
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
@@ -2090,7 +2085,6 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
 
-                progressStarLetter[7].gameObject.SetActive(false);
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(true);
@@ -2129,8 +2123,7 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 
@@ -2169,8 +2162,7 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 
@@ -2205,12 +2197,11 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[12].gameObject.SetActive(false);
                 progressStarLetter[11].gameObject.SetActive(false);
 
-                progressStarLetter[9].gameObject.SetActive(false);                        
+                progressStarLetter[10].gameObject.SetActive(false);                        
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 
@@ -2245,12 +2236,11 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 progressStarLetter[12].gameObject.SetActive(false);
                 progressStarLetter[11].gameObject.SetActive(false);
 
-                progressStarLetter[9].gameObject.SetActive(false);                        
+                progressStarLetter[10].gameObject.SetActive(false);                        
                 progressStarLetter[9].gameObject.SetActive(false);
                 progressStarLetter[8].gameObject.SetActive(false);                    
                 progressStarLetter[7].gameObject.SetActive(false);
-                
-                progressStarLetter[7].gameObject.SetActive(false);
+
                 progressStarLetter[6].gameObject.SetActive(false);
                 progressStarLetter[5].gameObject.SetActive(false);                      
                 progressStarLetter[4].gameObject.SetActive(false); 

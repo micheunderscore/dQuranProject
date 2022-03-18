@@ -1,0 +1,20 @@
+{
+  "conversation": [
+    {
+      "name": "Tuah",
+      "sentence": "Kita sudah di hujung jalan."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Pintu pagar dapat dibuka. Mahukah anda tolong bukakan pintu dihadapan?"
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Terima kasih, @user. Huruf terakhir Hijaiyah hari ini dapat ditemukan."
+    }
+  ]
+}
