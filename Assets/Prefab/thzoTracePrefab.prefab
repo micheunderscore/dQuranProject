@@ -562,8 +562,8 @@ MonoBehaviour:
     - {x: -2.6841793, y: -3.0111642, z: 0}
   - Object: {fileID: 4288462285029796521}
     Points:
-    - {x: 1.7494723, y: 0.8214529, z: 0}
-    - {x: 1.453963, y: 1.6656046, z: 0}
+    - {x: 1.5092906, y: 1.7082772, z: 0}
+    - {x: 1.7495712, y: 0.81573147, z: 0}
   UpdateSegmentsData: 1
 --- !u!114 &7578476128049415601
 MonoBehaviour:
@@ -2476,5 +2476,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: 
   ShouldContinue: 0
-  Start: {x: 1.7654723, y: 1.555453, z: 0}
-  End: {x: 1.4699631, y: 2.3996046, z: 0}
+  Start: {x: 1.5252906, y: 2.4422772, z: 0}
+  End: {x: 1.7655712, y: 1.5497315, z: 0}

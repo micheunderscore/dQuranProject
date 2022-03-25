@@ -1,0 +1,32 @@
+{
+  "conversation": [
+    {
+      "name": "Tuah",
+      "sentence": "Lihat! Ada anak burung terjatuh dari sarangnya."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Ayuh! Bantu anak burung itu ke sangkarnya."
+    },
+    {
+      "name": "@gameB",
+      "sentence": "."
+    },
+    {
+      "name": "Tuah",
+      "sentence": "Anak burung itu sudah selamat. Dan huruf Hijaiyah ketiga sudah kelihatan."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Dapatkah @user cari huruf tersebut?"
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Tuah",
+      "sentence": "Tepat sekali, dua ekor burung di sarang berbentuk huruf Hijaiyah Ta."
+    }
+  ]
+}

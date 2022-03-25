@@ -1,0 +1,24 @@
+{
+  "conversation": [
+    {
+      "name": "Alif",
+      "sentence": "Tuah! Selepas berjalan disekeliling kawasan ini, tiada buah-buahan yang tumbuh di atas pokok-pokok di sini."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Wah! Tuah, terdapat sebuah pokok epal di kawasan ini!"
+    },
+    {
+      "name": "Alif",
+      "sentence": "Bolehkah @user bantu kami dengan memetik epal tersebut?"
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Tuah",
+      "sentence": "Terima kasih, @user. Huruf Hijaiyah ketiga, kha, hari ini telah ditemui."
+    }
+  ]
+}

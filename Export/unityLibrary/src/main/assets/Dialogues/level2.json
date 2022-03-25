@@ -1,0 +1,36 @@
+{
+  "conversation": [
+    {
+      "name": "Tuah",
+      "sentence": "Alamak! Bagaimana Alif?"
+    },
+    {
+      "name": "Alif",
+      "sentence": "Iya la Tuah..."
+    },
+    {
+      "name": "Tuah",
+      "sentence": "@user... Saya perlukan bantuan kamu untuk alihkan pokok ini."
+    },
+    {
+      "name": "@gameA",
+      "sentence": "."
+    },
+    {
+      "name": "Tuah",
+      "sentence": "Jalan kita sudah dibuka ~meow. Terima kasih @user."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Dan kita juga telah temui huruf Hijaiyah yang kedua iaitu `Ba`."
+    },
+    {
+      "name": "Tuah",
+      "sentence": "Dahan pokok dan bunga di bawahnya membentuk huruf `Ba`."
+    },
+    {
+      "name": "Alif",
+      "sentence": "Betul, Tuah. Dan kita hanya perlu mencari huruf Hijaiyah `Ta` dan `Tsa`."
+    }
+  ]
+}
