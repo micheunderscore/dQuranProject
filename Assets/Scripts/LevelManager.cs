@@ -10,11 +10,11 @@ public class LevelManager : MonoBehaviour {
 
     public void Awake() {
         if (SaveSystem.CrossSceneInformation == null) SaveSystem.CrossSceneInformation = new int[32];
-        if (SaveSystem.PassedGameProgress == 0) SaveSystem.PassedGameProgress = 1;
         if (!File.Exists(Application.persistentDataPath + Path.DirectorySeparatorChar + "player.dq")) return;
         LevelData data = SaveSystem.LoadLevel();
         levelScores = data.levelScores;
         gameProgress = data.gameProgress;
+        if (SaveSystem.PassedGameProgress == 0) SaveSystem.PassedGameProgress = data.gameProgress;
     }
 
     public void Start() {
