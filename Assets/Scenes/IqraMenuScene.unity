@@ -8053,6 +8053,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!1001 &249495761
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8216,6 +8217,7 @@ GameObject:
   - component: {fileID: 343027588}
   - component: {fileID: 343027590}
   - component: {fileID: 343027589}
+  - component: {fileID: 343027591}
   m_Layer: 5
   m_Name: homeButtonImg
   m_TagString: Untagged
@@ -8281,6 +8283,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343027587}
   m_CullTransparentMesh: 1
+--- !u!114 &343027591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343027587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1001 &346326375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8484,7 +8499,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 0
 --- !u!483693784 &394560724
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -9210,6 +9225,7 @@ GameObject:
   - component: {fileID: 550033263}
   - component: {fileID: 550033265}
   - component: {fileID: 550033264}
+  - component: {fileID: 550033266}
   m_Layer: 5
   m_Name: iqraOneBtnImg
   m_TagString: Untagged
@@ -9275,6 +9291,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 550033262}
   m_CullTransparentMesh: 1
+--- !u!114 &550033266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 550033262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1 &563174794
 GameObject:
   m_ObjectHideFlags: 0
@@ -9471,6 +9500,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: IqraOne
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 550033266}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &595967475
@@ -9915,6 +9956,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: MainMenuScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 343027591}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &691376913
@@ -11245,6 +11298,7 @@ GameObject:
   - component: {fileID: 922234465}
   - component: {fileID: 922234467}
   - component: {fileID: 922234466}
+  - component: {fileID: 922234468}
   m_Layer: 5
   m_Name: settingButtonImg
   m_TagString: Untagged
@@ -11310,6 +11364,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922234464}
   m_CullTransparentMesh: 1
+--- !u!114 &922234468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 922234464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1 &948200906
 GameObject:
   m_ObjectHideFlags: 0
@@ -12841,7 +12908,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0
 --- !u!483693784 &1095678236
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -17423,7 +17490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0
 --- !u!483693784 &1414398130
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -17725,6 +17792,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Setting
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 922234468}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1443387279
@@ -22914,7 +22993,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 0
 --- !u!483693784 &1666250966
 TilemapRenderer:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class sceneManager : MonoBehaviour
 {
     private int sceneToContinue;
-    private int currrentSceneIndex;
+    public int currrentSceneIndex;
 
     void Start()
     {
@@ -23,7 +23,7 @@ public class sceneManager : MonoBehaviour
 
     public void ContinueScene()
     {
-        if (sceneToContinue != 0)
+        if (sceneToContinue >= 0)
             SceneManager.LoadScene(sceneToContinue);
 
         else
