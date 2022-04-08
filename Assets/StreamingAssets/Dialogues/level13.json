@@ -1,24 +1,48 @@
 {
-  "conversation": [
-    {
-      "name": "Tuah",
-      "sentence": "Alif, lihat di atas sana!"
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Bukankah itu anak-anak kecil Si Gayut sebentar tadi?"
-    },
-    {
-      "name": "Alif",
-      "sentence": "Si Gayut, barangkali sedang mencari makanan untuk Si Kecil."
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Bijak sekali, @user! Telatah Si Kecil itu melengkap bentuk huruf Hijaiyah 'Shin'."
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Tuah",
+        "sentence": "Alif, lihat di atas sana!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Bukankah itu anak-anak kecil Si Gayut sebentar tadi?"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Si Gayut, barangkali sedang mencari makanan untuk Si Kecil."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Bijak sekali, @user! Telatah Si Kecil itu melengkap bentuk huruf Hijaiyah 'Shin'."
+      }
+    ],
+    "en": [
+      {
+        "name": "Tuah",
+        "sentence": "Alif, lihat di atas sana!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Bukankah itu anak-anak kecil Si Gayut sebentar tadi?"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Si Gayut, barangkali sedang mencari makanan untuk Si Kecil."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Bijak sekali, @user! Telatah Si Kecil itu melengkap bentuk huruf Hijaiyah 'Shin'."
+      }
+    ]
+  }
 }

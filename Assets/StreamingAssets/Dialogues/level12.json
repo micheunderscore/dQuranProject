@@ -1,20 +1,40 @@
 {
-  "conversation": [
-    {
-      "name": "Tuah",
-      "sentence": "Wah, Si Gayut sedang bergayut riang di sana."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Dahan itu menyerupai huruf Hijaiyah. Tapi huruf apa iya?"
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Dahan itu bergulung membentuk huruf 'Sin'. Sesuai Si Gayut bergayut riang."
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Tuah",
+        "sentence": "Wah, Si Gayut sedang bergayut riang di sana."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Dahan itu menyerupai huruf Hijaiyah. Tapi huruf apa iya?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Dahan itu bergulung membentuk huruf 'Sin'. Sesuai Si Gayut bergayut riang."
+      }
+    ],
+    "en": [
+      {
+        "name": "Tuah",
+        "sentence": "Wah, Si Gayut sedang bergayut riang di sana."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Dahan itu menyerupai huruf Hijaiyah. Tapi huruf apa iya?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Dahan itu bergulung membentuk huruf 'Sin'. Sesuai Si Gayut bergayut riang."
+      }
+    ]
+  }
 }

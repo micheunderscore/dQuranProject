@@ -1,36 +1,88 @@
 {
-  "conversation": [
-    {
-      "name": "Tuah",
-      "sentence": "Alamak! Bagaimana Alif?"
-    },
-    {
-      "name": "Alif",
-      "sentence": "Iya la Tuah..."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "@user... Saya perlukan bantuan kamu untuk alihkan pokok ini."
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Jalan kita sudah dibuka ~meow. Terima kasih @user."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Dan kita juga telah temui huruf Hijaiyah yang kedua iaitu `Ba`."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Dahan pokok dan bunga di bawahnya membentuk huruf `Ba`."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Betul, Tuah. Dan kita hanya perlu mencari huruf Hijaiyah `Ta` dan `Tsa`."
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Tuah",
+        "sentence": "Alamak! Bagaimana Alif?"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Iya la Tuah..."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Kami perlukan bantuan kamu untuk alihkan pokok ini."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Jalan kita sudah dibuka ~meow. Terima kasih @user."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Dan kita juga telah temui huruf Hijaiyah yang kedua iaitu `Ba`."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Dahan pokok dan bunga di bawahnya membentuk huruf `Ba`."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Betul, Tuah."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Dan kita hanya perlu mencari huruf Hijaiyah `Ta` dan `Tsa`."
+      }
+    ],
+    "en": [
+      {
+        "name": "Tuah",
+        "sentence": "Oh no! What do we do, Alif?"
+      },
+      {
+        "name": "Alif",
+        "sentence": "This is bad. We can't get past this branch."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "We need your help moving this branch out of the way."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Hooray! We can continue on our path thanks to @user."
+      },
+      {
+        "name": "Alif",
+        "sentence": "And we've also found the next Hijaiyah letter, `Ba`."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Ah~ the branch and the flower below it look like the Hijaiyah letter `Ba`."
+      },
+      {
+        "name": "Alif",
+        "sentence": "That's right, Tuah."
+      },
+      {
+        "name": "Alif",
+        "sentence": "So now we only need to find `Ta` and `Tsa`."
+      }
+    ]
+  }
 }
