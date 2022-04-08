@@ -1,24 +1,72 @@
 {
-  "conversation": [
-    {
-      "name": "Alif",
-      "sentence": "Tuah! Selepas berjalan disekeliling kawasan ini, tiada buah-buahan yang tumbuh di atas pokok-pokok di sini."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Wah! Tuah, terdapat sebuah pokok epal di kawasan ini!"
-    },
-    {
-      "name": "Alif",
-      "sentence": "Bolehkah @user bantu kami dengan memetik epal tersebut?"
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Terima kasih, @user. Huruf Hijaiyah ketiga, kha, hari ini telah ditemui."
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Alif",
+        "sentence": "Tuah! Selepas berjalan disekeliling kawasan ini, tiada buah-buahan yang tumbuh di atas pokok-pokok di sini."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Wah! Tuah, terdapat sebuah pokok epal di kawasan ini!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Bolehkah @user bantu kami dengan memetik epal tersebut?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Terima kasih, @user. Huruf Hijaiyah ketiga, kha, hari ini telah ditemui."
+      }
+    ],
+    "en": [
+      {
+        "name": "Alif",
+        "sentence": "Huh..."
+      },
+      {
+        "name": "Alif",
+        "sentence": "It's weird that the trees that we passed..."
+      },
+      {
+        "name": "Alif",
+        "sentence": "...have no fruits growing."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Wait a second, Alif."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Look at that, there's an apple tree!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "@user, can you help us pick one of those apples?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Thanks, @user! You picked a delicious apple."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user also found the third Hijaiyah letter for this path, `Kha`."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Good job, @user!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Let's continue."
+      }
+    ]
+  }
 }

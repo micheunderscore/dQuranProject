@@ -1,28 +1,56 @@
 {
-  "conversation": [
-    {
-      "name": "Alif",
-      "sentence": "Tahukah Tuah iguana dapat merubah warna badannya?"
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Nampaknya kepala iguana ini juga mirip huruf Hijaiyah. Adakah ia satu kebolahan yang lain?"
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Alif",
-      "sentence": "@user punya penglihatan yang tajam. Baik sekali."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Lidah serta kepalanya mirip huruf 'Sād'"
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Dan benar kata Alif, warnanya berubah dari hijau ke biru malap."
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Alif",
+        "sentence": "Tahukah Tuah iguana dapat merubah warna badannya?"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Nampaknya kepala iguana ini juga mirip huruf Hijaiyah. Adakah ia satu kebolahan yang lain?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "@user punya penglihatan yang tajam. Baik sekali."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Lidah serta kepalanya mirip huruf 'Sād'"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Dan benar kata Alif, warnanya berubah dari hijau ke biru malap."
+      }
+    ],
+    "en": [
+      {
+        "name": "Alif",
+        "sentence": "Tahukah Tuah iguana dapat merubah warna badannya?"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Nampaknya kepala iguana ini juga mirip huruf Hijaiyah. Adakah ia satu kebolahan yang lain?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "@user punya penglihatan yang tajam. Baik sekali."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Lidah serta kepalanya mirip huruf 'Sād'"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Dan benar kata Alif, warnanya berubah dari hijau ke biru malap."
+      }
+    ]
+  }
 }

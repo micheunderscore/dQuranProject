@@ -1,20 +1,40 @@
 {
-  "conversation": [
-    {
-      "name": "Alif",
-      "sentence": "Lihat di sana! Monyet sedang makan pisang Tuah!"
-    },
-    {
-      "name": "Tuah",
-      "sentence": "@user, bantu saya untuk mengambil balik pisang saya dari monyet tersebut!"
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Terima kasih, @user. Kini kita telah menemui huruf Hijaiyah ketiga kita untuk hari ini!"
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Alif",
+        "sentence": "Lihat di sana! Monyet sedang makan pisang Tuah!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user, bantu saya untuk mengambil balik pisang saya dari monyet tersebut!"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Terima kasih, @user. Kini kita telah menemui huruf Hijaiyah ketiga kita untuk hari ini!"
+      }
+    ],
+    "en": [
+      {
+        "name": "Alif",
+        "sentence": "Lihat di sana! Monyet sedang makan pisang Tuah!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user, bantu saya untuk mengambil balik pisang saya dari monyet tersebut!"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Terima kasih, @user. Kini kita telah menemui huruf Hijaiyah ketiga kita untuk hari ini!"
+      }
+    ]
+  }
 }

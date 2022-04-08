@@ -1,24 +1,72 @@
 {
-  "conversation": [
-    {
-      "name": "Alif",
-      "sentence": "Tuah, sudah lama kita berjalan. Mari berhenti dan cari makanan."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Tuah, terdapat sepotong tembikai di atas bangku tersebut!"
-    },
-    {
-      "name": "Tuah",
-      "sentence": "@user, boleh bantu kami mengambil sedikit tembikai tersebut?"
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Terima kasih, @user. Huruf Hijaiyah pertama kita untuk hari ini telah ditemui!"
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Alif",
+        "sentence": "Tuah, sudah lama kita berjalan. Mari berhenti dan cari makanan."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Tuah, terdapat sepotong tembikai di atas bangku tersebut!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user, boleh bantu kami mengambil sedikit tembikai tersebut?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Terima kasih, @user. Huruf Hijaiyah pertama kita untuk hari ini telah ditemui!"
+      }
+    ],
+    "en": [
+      {
+        "name": "Alif",
+        "sentence": "Tuah, we've been walking for a while."
+      },
+      {
+        "name": "Alif",
+        "sentence": "We should stop to look for something to eat."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Alif, I think I see a watermelon up ahead."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Alif, I think I see a watermelon up ahead."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user, can you please help fetch that watermelon."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Thank you very much, @user."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "You've also found the first Hijaiyah letter for this path."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "The letter `Dal`!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Ahhhh, that was delicious~"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Let us continue."
+      }
+    ]
+  }
 }

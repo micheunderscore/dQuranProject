@@ -1,32 +1,84 @@
 {
-  "conversation": [
-    {
-      "name": "Alif",
-      "sentence": "Tuah, sudah lama kita berjalan. Alif juga rasa haus teramat!"
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Saya nampak ada sesuatu disebalik rumput tersebut. Mari kita melihat apa itu!"
-    },
-    {
-      "name": "Alif",
-      "sentence": "Wah! nasib kita amatlah baik, Tuah! Segelas air di sebalik rumput tersebut."
-    },
-    {
-      "name": "Alif",
-      "sentence": "@user, kami perlukan bantuan anda untuk mengambil gelas air itu."
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Yeay! Hilang rasa haus! Huruf Hijaiyah pertama harini telah dijumpai!"
-    },
-    {
-      "name": "Alif",
-      "sentence": "Ayuh, kita meneruskan perjalanan kita!"
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Alif",
+        "sentence": "Tuah, sudah lama kita berjalan. Alif juga rasa haus teramat!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Saya nampak ada sesuatu disebalik rumput tersebut. Mari kita melihat apa itu!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Wah! nasib kita amatlah baik, Tuah! Segelas air di sebalik rumput tersebut."
+      },
+      {
+        "name": "Alif",
+        "sentence": "@user, kami perlukan bantuan anda untuk mengambil gelas air itu."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Yeay! Hilang rasa haus! Huruf Hijaiyah pertama harini telah dijumpai!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Ayuh, kita meneruskan perjalanan kita!"
+      }
+    ],
+    "en": [
+      {
+        "name": "Alif",
+        "sentence": "Tuah, we've been walking for a while."
+      },
+      {
+        "name": "Alif",
+        "sentence": "I'm feeling thirsty~"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "I think I see something ahead in the grass."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Is that a jug of lemonade?"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Alhamdulillah, our luck has turned."
+      },
+      {
+        "name": "Alif",
+        "sentence": "@user, can you please help pass that jug of lemonade?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Mmmmmm~ That was really delicious."
+      },
+      {
+        "name": "Alif",
+        "sentence": "And with that, we have also found..."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "...the first Hijaiyah letter for this path!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Yep, the jug of lemonade looks like the letter, `Jim`"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Alright, let us continue on this path."
+      }
+    ]
+  }
 }

@@ -1,9 +1,15 @@
 using System;
-using UnityEngine;
+using System.Reflection;
 
 [Serializable]
 public class Dialogue {
-    public Convo[] conversation;
+    public Language conversation;
+}
+
+[Serializable]
+public class Language {
+    public Convo[] my;
+    public Convo[] en;
 }
 
 [Serializable]

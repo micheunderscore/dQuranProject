@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue () {
         sentences.Clear();
-        foreach (Convo sentence in dialogue.conversation) {
+        foreach (Convo sentence in dialogue.conversation.en) { // TODO: Modify when Change Language screen is implemented
             sentences.Enqueue(sentence);
         }
         DisplayNextSentence();

@@ -1,20 +1,44 @@
 {
-  "conversation": [
-    {
-      "name": "Alif",
-      "sentence": "Tuah, terdapat seekor udang galah terdampar di atas daun itu."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "@user, tolong kami selamatkan udang tersebut dan masukkannya semula kedalam kolam."
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Terima kasih, @user. Kini udang telah masuk kedalam kolamnya. Kita juga telah menemui huruf Hijaiyah kedua untuk hari ini."
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Alif",
+        "sentence": "Tuah, terdapat seekor udang galah terdampar di atas daun itu."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user, tolong kami selamatkan udang tersebut dan masukkannya semula kedalam kolam."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Terima kasih, @user. Kini udang telah masuk kedalam kolamnya. Kita juga telah menemui huruf Hijaiyah kedua untuk hari ini."
+      }
+    ],
+    "en": [
+      {
+        "name": "Alif",
+        "sentence": "Tuah, there's a stranded lobster on a leaf."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user, tolong kami selamatkan udang tersebut dan masukkannya semula kedalam kolam."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "@user, tolong kami selamatkan udang tersebut dan masukkannya semula kedalam kolam."
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Terima kasih, @user. Kini udang telah masuk kedalam kolamnya. Kita juga telah menemui huruf Hijaiyah kedua untuk hari ini."
+      }
+    ]
+  }
 }

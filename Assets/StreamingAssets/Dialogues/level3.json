@@ -1,32 +1,96 @@
 {
-  "conversation": [
-    {
-      "name": "Tuah",
-      "sentence": "Lihat! Ada anak burung terjatuh dari sarangnya."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Ayuh! Bantu anak burung itu ke sangkarnya."
-    },
-    {
-      "name": "@gameB",
-      "sentence": "."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Anak burung itu sudah selamat. Dan huruf Hijaiyah ketiga sudah kelihatan."
-    },
-    {
-      "name": "Alif",
-      "sentence": "Dapatkah @user cari huruf tersebut?"
-    },
-    {
-      "name": "@gameA",
-      "sentence": "."
-    },
-    {
-      "name": "Tuah",
-      "sentence": "Tepat sekali, dua ekor burung di sarang berbentuk huruf Hijaiyah Ta."
-    }
-  ]
+  "conversation": {
+    "my": [
+      {
+        "name": "Tuah",
+        "sentence": "Lihat! Ada anak burung terjatuh dari sarangnya."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Ayuh! Bantu anak burung itu ke sangkarnya."
+      },
+      {
+        "name": "@gameB",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Anak burung itu sudah selamat. Dan huruf Hijaiyah ketiga sudah kelihatan."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Dapatkah @user cari huruf tersebut?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "Tepat sekali, dua ekor burung di sarang berbentuk huruf Hijaiyah Ta."
+      }
+    ],
+    "en": [
+      {
+        "name": "Tuah",
+        "sentence": "Oh no!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "The baby bird has fell out of its nest."
+      },
+      {
+        "name": "Alif",
+        "sentence": "@user, quick!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Rescue that baby bird and place it back in its nest."
+      },
+      {
+        "name": "@gameB",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "You're a hero, @user!"
+      },
+      {
+        "name": "Tuah",
+        "sentence": "You have saved the baby bird."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Not only that..."
+      },
+      {
+        "name": "Alif",
+        "sentence": "...the third Hijaiyah letter can also be spotted now!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Can you see it, @user?"
+      },
+      {
+        "name": "@gameA",
+        "sentence": "."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "That is correct! The baby birds with the nest look like..."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "...the third Hijaiyah letter, `Ta`!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "Alhamdulillah, we sure are lucky to have you with us, @user."
+      },
+      {
+        "name": "Alif",
+        "sentence": "Let's continue on our journey now."
+      }
+    ]
+  }
 }
