@@ -534,6 +534,18 @@ MonoBehaviour:
           m_StringArgument: Hijaiyah_List2
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1554081915}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &41310460
 GameObject:
   m_ObjectHideFlags: 0
@@ -1095,6 +1107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &154177393
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4855,6 +4868,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &329449224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5513,6 +5527,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!1 &395170844
 GameObject:
   m_ObjectHideFlags: 0
@@ -5806,6 +5821,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Hijaiyah_List2
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1566719865}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &420948336
@@ -6382,6 +6409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &488357534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6820,6 +6848,7 @@ GameObject:
   - component: {fileID: 571854854}
   - component: {fileID: 571854856}
   - component: {fileID: 571854855}
+  - component: {fileID: 571854857}
   m_Layer: 5
   m_Name: settingButtonImg
   m_TagString: Untagged
@@ -6885,6 +6914,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 571854853}
   m_CullTransparentMesh: 1
+--- !u!114 &571854857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571854853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1 &632732140
 GameObject:
   m_ObjectHideFlags: 0
@@ -6975,7 +7017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 3
+  speed: 0
 --- !u!483693784 &639024812
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -11561,6 +11603,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &820503189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12374,7 +12417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 2
+  speed: 0
 --- !u!483693784 &859056051
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -19934,6 +19977,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &899631205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21959,6 +22003,7 @@ GameObject:
   - component: {fileID: 1080432053}
   - component: {fileID: 1080432055}
   - component: {fileID: 1080432054}
+  - component: {fileID: 1080432056}
   m_Layer: 5
   m_Name: homeButtonImg
   m_TagString: Untagged
@@ -22024,6 +22069,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1080432052}
   m_CullTransparentMesh: 1
+--- !u!114 &1080432056
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1080432052}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1001 &1085817421
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22484,7 +22542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 4
+  speed: 0
 --- !u!483693784 &1104752631
 TilemapRenderer:
   m_ObjectHideFlags: 0
@@ -24770,6 +24828,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &1221701345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25320,6 +25379,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: MainMenuScene
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1080432056}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1278686685
@@ -27884,6 +27955,7 @@ GameObject:
   - component: {fileID: 1554081912}
   - component: {fileID: 1554081914}
   - component: {fileID: 1554081913}
+  - component: {fileID: 1554081915}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -27949,6 +28021,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1554081911}
   m_CullTransparentMesh: 1
+--- !u!114 &1554081915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554081911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1 &1558708710
 GameObject:
   m_ObjectHideFlags: 0
@@ -29253,6 +29338,7 @@ GameObject:
   - component: {fileID: 1566719862}
   - component: {fileID: 1566719864}
   - component: {fileID: 1566719863}
+  - component: {fileID: 1566719865}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -29318,6 +29404,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1566719861}
   m_CullTransparentMesh: 1
+--- !u!114 &1566719865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566719861}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1 &1603910544
 GameObject:
   m_ObjectHideFlags: 0
@@ -30321,6 +30420,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &1720983888
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30674,6 +30774,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!1 &1763917991
 GameObject:
   m_ObjectHideFlags: 0
@@ -30905,6 +31006,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: Setting
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 571854857}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1781384924
@@ -32515,6 +32628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!114 &1899887214
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -32747,7 +32861,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 751833177bc40bb418947416b856ec21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 0
 --- !u!483693784 &1967101243
 TilemapRenderer:
   m_ObjectHideFlags: 0
