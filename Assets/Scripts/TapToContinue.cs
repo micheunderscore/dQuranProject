@@ -10,9 +10,11 @@ public class TapToContinue : MonoBehaviour {
     }
 
     void Update() {
+        Debug.Log("Tutorial:::" + Input.touchCount);
         if (gameManager.state == GameState.Dialogue) {
             textState = 1;
-        } else if (Input.touchCount > 0) {
+        }
+        if (Input.touchCount > 0) {
             textState = 2;
         }
 
