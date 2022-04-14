@@ -1083,6 +1083,738 @@
           }
         ]
       }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "Good morning, Alif!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Are you ready to find..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...the next Hijaiyah letter?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yep, if I remember correctly..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "The next letters should be `Tha`, `Zha`, `Ain`, and `Ghain`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Actually, I can see one right here!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Can you see it, @user?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Good job, @user."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yes, this axe looks like the letter `Tha`."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "I see a boat ahead of us, Alif."
+          },
+          {
+            "name": "Alif",
+            "sentence": "We can cross this lake with it."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, we need your help."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Can you help push the boat into water?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thank you, @user."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "We can set sail now!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "We have also found the Hijaiyah letter `Zha`"
+          },
+          {
+            "name": "Alif",
+            "sentence": "The second Hijaiyah letter for today!"
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "Alif, do you see that plant up ahead?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yeah, Tuah. I see it."
+          },
+          {
+            "name": "Alif",
+            "sentence": "That plant looks odd."
+          },
+          {
+            "name": "Alif",
+            "sentence": "What plant is that?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "This is a Venus Fly Trap."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It eats small insects and it's found in forests."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It also resembles the shape of a Hijaiyah letter."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, can you help show Alif?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          },
+          {
+            "name": "Alif",
+            "sentence": "I see it now."
+          },
+          {
+            "name": "Alif",
+            "sentence": "The mouth of the plant opens wide..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Which makes it look like the letter `Ain`."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, look."
+          },
+          {
+            "name": "Alif",
+            "sentence": "A bird!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Oh, is that a Cockatoo?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The feathers on its head remind me..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...of a Hijaiyah letter!"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Good eye, @user."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "I thought it looked like the letter `Ghain`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "That makes this the final Hijaiyah letter for today."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Come on, let's continue our journey."
+          },
+          {
+            "name": "Alif",
+            "sentence": "We are close to reaching our destination."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Wow, there is a beautiful pond right there."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Alif, did you see the fish jump?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "The fish looked like a Hijaiyah letter."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Can @user find the match the fish..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...with the Hijaiyah letter?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Good job, @user!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The Hijaiyah letter is `Fa`."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, you are so smart."
+          },
+          {
+            "name": "Alif",
+            "sentence": "We're lucky to have you with us."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's continue."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, there's some shade up ahead."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's head over there."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Hey, there's a caterpillar here."
+          },
+          {
+            "name": "Alif",
+            "sentence": "I wonder if this caterpillar..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...looks like a Hijaiyah letter?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes, @user. That is exactly correct."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It looks like the leter `Kof`."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's continue."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, there's another shady tree."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's head over there."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Alif, look! There's a bird on the branch."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Indeed, Tuah."
+          },
+          {
+            "name": "Alif",
+            "sentence": "That bird's position on the tree..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...looks like a Hijaiyah letter!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Can @user help us figure out what Hijaiyah letter it is?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Wow, thanks @user!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "That Hijaiyah letter is `Kaf`."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, there's something in front of us."
+          },
+          {
+            "name": "Alif",
+            "sentence": "What is it?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Alif, that is a Candy Cane."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Someone must have left it here."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Can I have it, Tuah?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Alif, you are not allowed to take..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...something that isn't yours."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Alright, Tuah. You're right."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Although, looking at it closely..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "It does remind me of a Hijaiyah letter."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "That is correct, Alif."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Can @user help us guess..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...what Hijaiyah letter it is?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Wow, @user is so smart!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The letter is `Lam`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Let us continue."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "CONTINUE HERE"
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Is that a flamingo?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes. It looks like a Hijaiyah letter."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thanks, @user. You're smart."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Is that boat with a red flag?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes. It looks like a Hijaiyah letter."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thanks, @user. You're smart."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Is that a tied boat?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes. It looks like a Hijaiyah letter."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thanks, @user. You're smart."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Is that a tapir?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes. It looks like a Hijaiyah letter."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thanks, @user. You're smart."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Is that a giraffe?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes. It looks like a Hijaiyah letter."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thanks, @user. You're smart."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": ""
+          },
+          {
+            "name": "Tuah",
+            "sentence": ""
+          },
+          {
+            "name": "@gameA",
+            "sentence": ""
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Is that a duck?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes. It looks like a Hijaiyah letter."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thanks, @user. You're smart."
+          }
+        ]
+      }
     }
   ]
 }
