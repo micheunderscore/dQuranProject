@@ -16612,6 +16612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6a2325d4585934389b88b821adea55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currrentSceneIndex: 0
 --- !u!4 &1732785807
 Transform:
   m_ObjectHideFlags: 0
@@ -16719,7 +16720,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: GameScene3
+          m_StringArgument: GameScene15
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1737660653
