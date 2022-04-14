@@ -25,11 +25,11 @@
       },
       {
         "name": "Tuah",
-        "sentence": "@user, tolong kami selamatkan udang tersebut dan masukkannya semula kedalam kolam."
+        "sentence": "@user, help us save the lobster!"
       },
       {
         "name": "Tuah",
-        "sentence": "@user, tolong kami selamatkan udang tersebut dan masukkannya semula kedalam kolam."
+        "sentence": "You need to help it get back into the pond."
       },
       {
         "name": "@gameA",
@@ -37,7 +37,15 @@
       },
       {
         "name": "Alif",
-        "sentence": "Terima kasih, @user. Kini udang telah masuk kedalam kolamnya. Kita juga telah menemui huruf Hijaiyah kedua untuk hari ini."
+        "sentence": "Thank you, @user. The lobster has returned to it's pond."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "We've also found the second Hijaiyah letter for today."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "`Dzal`"
       }
     ]
   }

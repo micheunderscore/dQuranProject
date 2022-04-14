@@ -21,11 +21,19 @@
     "en": [
       {
         "name": "Alif",
-        "sentence": "Wah! Tuah, lihat. Ada pokok chili."
+        "sentence": "Wow!"
       },
       {
         "name": "Alif",
-        "sentence": "@user, tolong kami petik chili dari pohon pokok itu."
+        "sentence": "Look at that, Tuah."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "That's a chili tree."
+      },
+      {
+        "name": "Alif",
+        "sentence": "@user, can you help us pick the chili from the tree?"
       },
       {
         "name": "@gameA",
@@ -33,7 +41,15 @@
       },
       {
         "name": "Alif",
-        "sentence": "Terima kasih, @user. Kini kita telah menemui huruf Hijaiyah terakhir kita untuk hari ini."
+        "sentence": "Thank you, @user."
+      },
+      {
+        "name": "Alif",
+        "sentence": "You've found the letter `Zai`."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "The final Hijaiyah letter for today."
       }
     ]
   }

@@ -21,11 +21,15 @@
     "en": [
       {
         "name": "Alif",
-        "sentence": "Lihat di sana! Monyet sedang makan pisang Tuah!"
+        "sentence": "Look over there, Tuah!"
+      },
+      {
+        "name": "Alif",
+        "sentence": "There is a monkey eating your banana!"
       },
       {
         "name": "Tuah",
-        "sentence": "@user, bantu saya untuk mengambil balik pisang saya dari monyet tersebut!"
+        "sentence": "@user, help me get my banana back."
       },
       {
         "name": "@gameA",
@@ -33,7 +37,15 @@
       },
       {
         "name": "Tuah",
-        "sentence": "Terima kasih, @user. Kini kita telah menemui huruf Hijaiyah ketiga kita untuk hari ini!"
+        "sentence": "Thank you for your help, @user."
+      },
+      {
+        "name": "Tuah",
+        "sentence": "We have also found the third Hijaiyah letter for today."
+      },
+      {
+        "name": "Alif",
+        "sentence": "The letter `Ra`!"
       }
     ]
   }
