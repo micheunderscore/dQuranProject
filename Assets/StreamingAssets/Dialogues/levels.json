@@ -1,0 +1,1088 @@
+{
+  "dialogues": [
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Adakah kamu perasan sesuatu?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Alif yakin huruf Hijaiyah pertama ada berdekatan."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Adakah anda dapat mengesan huruf Hijaiyah pertama, `Alif`?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yeay! Huruf pertama sudah dijumpai."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Bagus sekali, @user! Kayu ini bentuk sama huruf Hijaiyah 'ālif'."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Betul Tuah, kayu ini berdiri tegak seperti huruf Hijaiyah 'ālif'"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Ayuh, kita cari huruf Hijaiyah yang seterusnya."
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Hey, Tuah."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Have you noticed something?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "What is it, Alif?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "I'm certain the first Hijaiyah letter is near by."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Can you spot the first Hijaiyah letter, `Alif`?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yay!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The first Hijaiyah letter has been found!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "You got sharp eyes, @user!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yes, this tree looks just like the first Hijaiyah letter, `Alif`."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's continue our journey to find the next Hijaiyah letters."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Tuah",
+            "sentence": "Alamak! Bagaimana Alif?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Iya la Tuah..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Kami perlukan bantuan kamu untuk alihkan pokok ini."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Jalan kita sudah dibuka ~meow. Terima kasih @user."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Dan kita juga telah temui huruf Hijaiyah yang kedua iaitu `Ba`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Dahan pokok dan bunga di bawahnya membentuk huruf `Ba`."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Betul, Tuah."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Dan kita hanya perlu mencari huruf Hijaiyah `Ta` dan `Tsa`."
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "Oh no! What do we do, Alif?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "This is bad. We can't get past this branch."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "We need your help moving this branch out of the way."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Hooray! We can continue on our path thanks to @user."
+          },
+          {
+            "name": "Alif",
+            "sentence": "And we've also found the next Hijaiyah letter, `Ba`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Ah~ the branch and the flower below it look like the Hijaiyah letter `Ba`."
+          },
+          {
+            "name": "Alif",
+            "sentence": "That's right, Tuah."
+          },
+          {
+            "name": "Alif",
+            "sentence": "So now we only need to find `Ta` and `Tsa`."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Tuah",
+            "sentence": "Lihat! Ada anak burung terjatuh dari sarangnya."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Ayuh! Bantu anak burung itu ke sangkarnya."
+          },
+          {
+            "name": "@gameB",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Anak burung itu sudah selamat. Dan huruf Hijaiyah ketiga sudah kelihatan."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Dapatkah @user cari huruf tersebut?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Tepat sekali, dua ekor burung di sarang berbentuk huruf Hijaiyah Ta."
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "Oh no!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The baby bird has fell out of its nest."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, quick!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Rescue that baby bird and place it back in its nest."
+          },
+          {
+            "name": "@gameB",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "You're a hero, @user!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "You have saved the baby bird."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Not only that..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...the third Hijaiyah letter can also be spotted now!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Can you see it, @user?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "That is correct! The baby birds with the nest look like..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...the third Hijaiyah letter, `Ta`!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Alhamdulillah, we sure are lucky to have you with us, @user."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's continue on our journey now."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Tuah",
+            "sentence": "Kita sudah di hujung jalan."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Pintu pagar dapat dibuka. Mahukah anda tolong bukakan pintu dihadapan?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Terima kasih, @user. Huruf terakhir Hijaiyah hari ini dapat ditemukan."
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "Alright, seems like we're at the end of this path."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "But there's a gate blocking our way."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Hmmm..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Seems like we can open the gate."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, will you help us open the gate?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Alhamdulillah."
+          },
+          {
+            "name": "Alif",
+            "sentence": "I think that was the final Hijaiyah letter for this path."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yep, that was the letter, `Tsa`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Good work, @user!"
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, sudah lama kita berjalan. Alif juga rasa haus teramat!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Saya nampak ada sesuatu disebalik rumput tersebut. Mari kita melihat apa itu!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Wah! nasib kita amatlah baik, Tuah! Segelas air di sebalik rumput tersebut."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, kami perlukan bantuan anda untuk mengambil gelas air itu."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yeay! Hilang rasa haus! Huruf Hijaiyah pertama harini telah dijumpai!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Ayuh, kita meneruskan perjalanan kita!"
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, we've been walking for a while."
+          },
+          {
+            "name": "Alif",
+            "sentence": "I'm feeling thirsty~"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "I think I see something ahead in the grass."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Is that a jug of lemonade?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Alhamdulillah, our luck has turned."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, can you please help pass that jug of lemonade?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Mmmmmm~ That was really delicious."
+          },
+          {
+            "name": "Alif",
+            "sentence": "And with that, we have also found..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...the first Hijaiyah letter for this path!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yep, the jug of lemonade looks like the letter, `Jim`"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Alright, let us continue on this path."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, terdapat seekor angsa di kolam itu yang mahu makan."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, tolong berikan makanan kepadanya!"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yeay! Terima kasih, @user kerana memberi angsa makan. Kini kita telah jumpa huruf hijaiyah kita yang kedua!"
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, look at that!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Oh, it's a goose in the pond."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Hey @user, can you help feed the goose?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Masha Allah, that goose is pretty."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It also looks like the second Hijaiyah letter for this path..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...the letter `Ha`!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Great work, @user. That was a good find."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah! Selepas berjalan disekeliling kawasan ini, tiada buah-buahan yang tumbuh di atas pokok-pokok di sini."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Wah! Tuah, terdapat sebuah pokok epal di kawasan ini!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Bolehkah @user bantu kami dengan memetik epal tersebut?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Terima kasih, @user. Huruf Hijaiyah ketiga, kha, hari ini telah ditemui."
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Huh..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "It's weird that the trees that we passed..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...have no fruits growing."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Wait a second, Alif."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Look at that, there's an apple tree!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, can you help us pick one of those apples?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Thanks, @user! You picked a delicious apple."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user also found the third Hijaiyah letter for this path, `Kha`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Good job, @user!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's continue."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, sudah lama kita berjalan. Mari berhenti dan cari makanan."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Tuah, terdapat sepotong tembikai di atas bangku tersebut!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, boleh bantu kami mengambil sedikit tembikai tersebut?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Terima kasih, @user. Huruf Hijaiyah pertama kita untuk hari ini telah ditemui!"
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, we've been walking for a while."
+          },
+          {
+            "name": "Alif",
+            "sentence": "We should stop to look for something to eat."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Alif, I think I see a watermelon up ahead."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Alif, I think I see a watermelon up ahead."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, can you please help fetch that watermelon."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Thank you very much, @user."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "You've also found the first Hijaiyah letter for this path."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The letter `Dal`!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Ahhhh, that was delicious~"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let us continue."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, terdapat seekor udang galah terdampar di atas daun itu."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, tolong kami selamatkan udang tersebut dan masukkannya semula kedalam kolam."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Terima kasih, @user. Kini udang telah masuk kedalam kolamnya. Kita juga telah menemui huruf Hijaiyah kedua untuk hari ini."
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, there's a stranded lobster on a leaf."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, help us save the lobster!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "You need to help it get back into the pond."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Thank you, @user. The lobster has returned to it's pond."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "We've also found the second Hijaiyah letter for today."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "`Dzal`"
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Lihat di sana! Monyet sedang makan pisang Tuah!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, bantu saya untuk mengambil balik pisang saya dari monyet tersebut!"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Terima kasih, @user. Kini kita telah menemui huruf Hijaiyah ketiga kita untuk hari ini!"
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Look over there, Tuah!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "There is a monkey eating your banana!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, help me get my banana back."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thank you for your help, @user."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "We have also found the third Hijaiyah letter for today."
+          },
+          {
+            "name": "Alif",
+            "sentence": "The letter `Ra`!"
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Wah! Tuah, lihat. Ada pokok chili."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, tolong kami petik chili dari pohon pokok itu."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Terima kasih, @user. Kini kita telah menemui huruf Hijaiyah terakhir kita untuk hari ini."
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Wow!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Look at that, Tuah."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "That's a chili tree."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, can you help us pick the chili from the tree?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Thank you, @user."
+          },
+          {
+            "name": "Alif",
+            "sentence": "You've found the letter `Zai`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The final Hijaiyah letter for today."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Tuah",
+            "sentence": "Wah, Si Gayut sedang bergayut riang di sana."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Dahan itu menyerupai huruf Hijaiyah. Tapi huruf apa iya?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Dahan itu bergulung membentuk huruf 'Sin'. Sesuai Si Gayut bergayut riang."
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "Woah! Mr.Monkey is swinging around."
+          },
+          {
+            "name": "Alif",
+            "sentence": "That branch looks familiar..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "It looks like a Hijaiyah letter."
+          },
+          {
+            "name": "Alif",
+            "sentence": "But which letter could it be?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Hey, @user!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Do you think you can help us figure it out?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "That makes a lot of sense!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The letter `Sin` curves around..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Which makes it perfect for swinging around."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Thank you, @user."
+          },
+          {
+            "name": "Alif",
+            "sentence": "We've now found the first Hijaiyah letter for today."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Tuah",
+            "sentence": "Alif, lihat di atas sana!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Bukankah itu anak-anak kecil Si Gayut sebentar tadi?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Si Gayut, barangkali sedang mencari makanan untuk Si Kecil."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Bijak sekali, @user! Telatah Si Kecil itu melengkap bentuk huruf Hijaiyah 'Shin'."
+          }
+        ],
+        "en": [
+          {
+            "name": "Tuah",
+            "sentence": "Alif, look up there!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Wait..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "@user, can you see what those are?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "You're right, that looks like the letter `Shin`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "And aren't those Mr.Monkey's children?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "I'm guessing Mr.Monkey was looking for food for them."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Great work, @user!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "The little monkeys playing around the branches..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...looks similar to our second Hijaiyah letter today."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Tahukah Tuah iguana dapat merubah warna badannya?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Nampaknya kepala iguana ini juga mirip huruf Hijaiyah. Adakah ia satu kebolahan yang lain?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user punya penglihatan yang tajam. Baik sekali."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Lidah serta kepalanya mirip huruf 'Sād'"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Dan benar kata Alif, warnanya berubah dari hijau ke biru malap."
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, did you know that..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...iguanas can change the color of their bodies?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It seems like its head looks familiar."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Almost like a Hijaiyah letter."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Does it have a secret ability?"
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user has the eyes of an eagle!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Its tongue and head make up the letter 'Sād'"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "And look, Alif."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It changed colours, just like you said it would."
+          }
+        ]
+      }
+    },
+    {
+      "languages": {
+        "my": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, masih mahu berjalan mencari huruf lagi?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Di sana terdapat khemah dan tinggalan unggun api."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Dapatlah kita berehat sebentar. Tapi... cerek itu seperti pernah Tuah lihat."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Hebat, huruf Hijaiyah 'Dād' sudah pun ditemui."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Asap di cerek itu seperti sudah ditinggalkan."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Iya, Alif. Dapat kita masuk dan berehat dahulu. Tidakkah begitu?"
+          }
+        ],
+        "en": [
+          {
+            "name": "Alif",
+            "sentence": "Tuah, do you want to continue?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "I don't think there are any more Hijaiyah letters."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Hmmm..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Look ahead, though."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "There seems to be a tent and campfire."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "We can rest here and clear our minds."
+          },
+          {
+            "name": "Alif",
+            "sentence": "I think I've seen that pot before..."
+          },
+          {
+            "name": "@gameA",
+            "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Awesome, the Hijaiyah letter `Dād`..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...has been found!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "That's right, Alif."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Let's take a break..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...and continue this journey tomorrow."
+          }
+        ]
+      }
+    }
+  ]
+}

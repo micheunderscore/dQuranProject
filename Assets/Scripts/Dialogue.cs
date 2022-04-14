@@ -2,18 +2,23 @@ using System;
 using System.Reflection;
 
 [Serializable]
+public class Dialogues {
+    public Dialogue[] dialogues;
+}
+
+[Serializable]
 public class Dialogue {
-    public Language conversation;
+    public Language languages;
 }
 
 [Serializable]
 public class Language {
-    public Convo[] my;
-    public Convo[] en;
+    public Dialog[] my;
+    public Dialog[] en;
 }
 
 [Serializable]
-public class Convo {
+public class Dialog {
     public string name;
     public string sentence;
 }

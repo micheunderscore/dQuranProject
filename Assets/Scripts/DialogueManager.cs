@@ -7,7 +7,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public List<Vector3> uiPositions = new List<Vector3>();
-    private Queue<Convo> sentences = new Queue<Convo>();
+    private Queue<Dialog> sentences = new Queue<Dialog>();
     private string path;
     private string jsonString;
     private JsonReader jsonReader = new JsonReader();
@@ -22,8 +22,8 @@ public class DialogueManager : MonoBehaviour
     }
     
     void Start() {
-        jsonString = jsonReader.Read("Dialogues" + Path.DirectorySeparatorChar + "level"+ gameManager.currentLevel +".json");
-        dialogue = JsonUtility.FromJson<Dialogue>(jsonString);
+        jsonString = jsonReader.Read("Dialogues" + Path.DirectorySeparatorChar + "levels.json");
+        dialogue = JsonUtility.FromJson<Dialogues>(jsonString).dialogues[gameManager.currentLevel - 1];
 
         dialogText = dialogBox.transform.Find("DialogText").GetComponent<TextMeshProUGUI>();
         namePlate = dialogBox.transform.Find("NamePlate").GetComponent<TextMeshProUGUI>();
@@ -31,7 +31,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue () {
         sentences.Clear();
-        foreach (Convo sentence in dialogue.conversation.en) { // TODO: Modify when Change Language screen is implemented
+        foreach (Dialog sentence in dialogue.languages.en) { // TODO: Modify when Change Language screen is implemented
             sentences.Enqueue(sentence);
         }
         DisplayNextSentence();
@@ -43,7 +43,7 @@ public class DialogueManager : MonoBehaviour
             return "@end";
         }
 
-        Convo sentence = sentences.Dequeue();
+        Dialog sentence = sentences.Dequeue();
         
         if (Regex.IsMatch(sentence.name, "@game")) {
             return sentence.name;
@@ -53,7 +53,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void DisplayText (Convo conversation) {
+    public void DisplayText (Dialog conversation) {
         int index = 0;
         switch (conversation.name) {
             case "Alif":
