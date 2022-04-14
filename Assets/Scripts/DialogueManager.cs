@@ -25,8 +25,10 @@ public class DialogueManager : MonoBehaviour
         jsonString = jsonReader.Read("Dialogues" + Path.DirectorySeparatorChar + "levels.json");
         dialogue = JsonUtility.FromJson<Dialogues>(jsonString).dialogues[gameManager.currentLevel - 1];
 
-        dialogText = dialogBox.transform.Find("DialogText").GetComponent<TextMeshProUGUI>();
-        namePlate = dialogBox.transform.Find("NamePlate").GetComponent<TextMeshProUGUI>();
+        Debug.Log(dialogue.languages.en[0].sentence);
+
+        dialogText = dialogBox.transform.Find("TextBar").transform.Find("DialogText").GetComponent<TextMeshProUGUI>();
+        namePlate = dialogBox.transform.Find("TextBar").transform.Find("NamePlate").GetComponent<TextMeshProUGUI>();
     }
 
     public void StartDialogue () {
@@ -64,7 +66,7 @@ public class DialogueManager : MonoBehaviour
                 break;
         }
         if (dialogBox.activeSelf) {
-            dialogBox.transform.localPosition = uiPositions[index];
+            dialogBox.transform.Find("TextBar").transform.localPosition = uiPositions[index];
         }
 
         dialogText.text = conversation.sentence.Replace("@user", username);

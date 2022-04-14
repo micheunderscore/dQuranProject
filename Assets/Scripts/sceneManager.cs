@@ -21,6 +21,10 @@ public class sceneManager : MonoBehaviour
         SceneManager.LoadScene(sceneName);
     }
 
+    public void ReloadCurrentScene () {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void ContinueScene()
     {
         if (sceneToContinue >= 0)
