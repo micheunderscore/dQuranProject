@@ -24,6 +24,7 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
+        
         DontDestroyOnLoad(this.gameObject); 
 
         if (Instance == null)
@@ -43,5 +44,9 @@ public class SoundManager : MonoBehaviour
         _effectsSource.PlayOneShot(clip);
     } 
 
+    public void ToggleMusic()
+    {
+        _musicSource.mute = !_musicSource.mute;
+    }
     
 }
