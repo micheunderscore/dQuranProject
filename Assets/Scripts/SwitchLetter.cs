@@ -118,6 +118,15 @@ public class SwitchLetter : MonoBehaviour
             hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);            
         }
 
+        dialogueBox[0].gameObject.SetActive(false);
+        dialogueBox[1].gameObject.SetActive(false);
+        dialogueBox[2].gameObject.SetActive(false);
+        dialogueBox[3].gameObject.SetActive(false);
+        dialogueBox[4].gameObject.SetActive(false);
+        dialogueBox[5].gameObject.SetActive(false);
+        dialogueBox[6].gameObject.SetActive(false);
+        dialogueBox[7].gameObject.SetActive(false);        
+
 
     }
 
@@ -151,6 +160,15 @@ public class SwitchLetter : MonoBehaviour
         hijaiyahLetterVideoObject[indexPrevious].gameObject.SetActive(false);
 
         Debug.Log(indexLetter);
+
+        dialogueBox[0].gameObject.SetActive(false);
+        dialogueBox[1].gameObject.SetActive(false);
+        dialogueBox[2].gameObject.SetActive(false);
+        dialogueBox[3].gameObject.SetActive(false);
+        dialogueBox[4].gameObject.SetActive(false);
+        dialogueBox[5].gameObject.SetActive(false);
+        dialogueBox[6].gameObject.SetActive(false);
+        dialogueBox[7].gameObject.SetActive(false);
     }
 
     public void hijaiyahLetterRecitation()
@@ -197,6 +215,9 @@ public class SwitchLetter : MonoBehaviour
         dialogueBox[2].gameObject.SetActive(false);
         dialogueBox[3].gameObject.SetActive(false);
         dialogueBox[4].gameObject.SetActive(false);
+        dialogueBox[5].gameObject.SetActive(false);
+        dialogueBox[6].gameObject.SetActive(false);
+        dialogueBox[7].gameObject.SetActive(false);
     }
 
     public void letterToListOnClick()

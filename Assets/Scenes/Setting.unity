@@ -2695,8 +2695,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 375102062}
         m_TargetAssemblyTypeName: AudioMixerController, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 4
+        m_MethodName: SliderValueChanged
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -10112,8 +10112,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 998061467}
         m_TargetAssemblyTypeName: AudioMixerController, Assembly-CSharp
-        m_MethodName: SetVolume
-        m_Mode: 4
+        m_MethodName: SliderValueChanged
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

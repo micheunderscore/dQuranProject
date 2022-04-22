@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class HijaiyahLetterScoreUpdate : MonoBehaviour
 {
@@ -11,6 +12,8 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
 
     public int indexScoreLetter = 0;
     public int currentPage;
+
+    [SerializeField] private AudioClip _clip;
 
 
     // Start is called before the first frame update
@@ -2262,30 +2265,64 @@ public class HijaiyahLetterScoreUpdate : MonoBehaviour
                 {
                     progressDialogueBox[0].gameObject.SetActive(true);
                     Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
                 }
 
-                else if (indexScoreLetter == 7 || indexScoreLetter == 15)
+                else if (indexScoreLetter == 7)
                 {
                     progressDialogueBox[1].gameObject.SetActive(true);
                     Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
                 }
 
-                else if (indexScoreLetter == 11 || indexScoreLetter == 23)
+                else if (indexScoreLetter == 11)
                 {
                     progressDialogueBox[2].gameObject.SetActive(true);
                     Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
                 }
 
-                else if (indexScoreLetter == 19 || indexScoreLetter == 27)
+                else if (indexScoreLetter == 15)
                 {
                     progressDialogueBox[3].gameObject.SetActive(true);
                     Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
+                }
+
+                else if (indexScoreLetter == 19)
+                {
+                    progressDialogueBox[4].gameObject.SetActive(true);
+                    Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
+                }
+
+                else if (indexScoreLetter == 23)
+                {
+                    progressDialogueBox[5].gameObject.SetActive(true);
+                    Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
+                }
+
+                else if (indexScoreLetter == 27)
+                {
+                    progressDialogueBox[6].gameObject.SetActive(true);
+                    Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
                 }
 
                 else if (indexScoreLetter == 28)
                 {
-                    progressDialogueBox[4].gameObject.SetActive(true);
+                    progressDialogueBox[7].gameObject.SetActive(true);
                     Debug.Log("Hijaiyah letter " + currentPage + " completed" );
+
+                    SoundManager.Instance.PlaySoundSuccess(_clip);
                 }
 
             }
