@@ -1605,7 +1605,7 @@
         "my": [
           {
             "name": "Alif",
-            "sentence": "CONTINUE HERE"
+            "sentence": ""
           },
           {
             "name": "Tuah",
@@ -1617,13 +1617,37 @@
           }
         ],
         "en": [
+          {
+            "name": "Alif",
+            "sentence": "Hey, Tuah."
+          },
           {
             "name": "Alif",
             "sentence": "Is that a flamingo?"
           },
           {
             "name": "Tuah",
-            "sentence": "Yes. It looks like a Hijaiyah letter."
+            "sentence": "Yes, I think it is."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Masha'Allah!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "It's a very beautiful bird."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Yes, it is."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It also reminds me of a Hijaiyah letter."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Can @user see what Hijaiyah letter it is?"
           },
           {
             "name": "@gameA",
@@ -1631,7 +1655,23 @@
           },
           {
             "name": "Tuah",
-            "sentence": "Thanks, @user. You're smart."
+            "sentence": "Yes, that is correct!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The flamingo looks just like..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...the letter `Mim`."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Correct!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Let's get a move on."
           }
         ]
       }
@@ -1653,21 +1693,53 @@
           }
         ],
         "en": [
+          {
+            "name": "Alif",
+            "sentence": "AHOY!"
+          },
           {
             "name": "Alif",
             "sentence": "Is that boat with a red flag?"
           },
           {
             "name": "Tuah",
-            "sentence": "Yes. It looks like a Hijaiyah letter."
+            "sentence": "That is indeed a boat..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...with a red flag!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "What Hijaiyah letter does it resemble?"
           },
           {
             "name": "@gameA",
             "sentence": "."
           },
           {
+            "name": "Alif",
+            "sentence": "That's right!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "It looks like..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...the Hijaiyah letter `Nun`."
+          },
+          {
             "name": "Tuah",
-            "sentence": "Thanks, @user. You're smart."
+            "sentence": "It really does."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Alright, let's continue on this path."
           }
         ]
       }
@@ -1691,15 +1763,43 @@
         "en": [
           {
             "name": "Alif",
-            "sentence": "Is that a tied boat?"
+            "sentence": "I think I see another boat up ahead."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Is the boat tied?"
           },
           {
             "name": "Tuah",
-            "sentence": "Yes. It looks like a Hijaiyah letter."
+            "sentence": "Yes, I think it is."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "I also think..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "It looks like another Hijaiyah letter."
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, can you recognize what Hijaiyah letter does it resemble?"
           },
           {
             "name": "@gameA",
             "sentence": "."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Yes, that's right!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "The knot tied to the boat..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...looks like the letter `Ha`."
           },
           {
             "name": "Tuah",
@@ -1731,15 +1831,51 @@
           },
           {
             "name": "Tuah",
-            "sentence": "Yes. It looks like a Hijaiyah letter."
+            "sentence": "Yes, that is apparently..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...a tapir!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "It also looks like a Hijaiyah letter."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Can @user recognize this Hijaiyah letter?"
           },
           {
             "name": "@gameA",
             "sentence": "."
           },
           {
+            "name": "Alif",
+            "sentence": "Yes, that is definitely it."
+          },
+          {
+            "name": "Alif",
+            "sentence": "It is the letter `Waw`."
+          },
+          {
             "name": "Tuah",
-            "sentence": "Thanks, @user. You're smart."
+            "sentence": "Yeah."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The tapir's head..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...definitely looks like it."
+          },
+          {
+            "name": "Alif",
+            "sentence": "That is the first Hijaiyah letter for this path."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's continue on our journey."
           }
         ]
       }
@@ -1767,7 +1903,35 @@
           },
           {
             "name": "Tuah",
-            "sentence": "Yes. It looks like a Hijaiyah letter."
+            "sentence": "Yes, that's a giraffe."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Why is it lying on the ground?"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "I don't know."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "What I do know..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...is that it looks like a Hijaiyah letter!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "@user, quick!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "What Hijaiyah letter..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...does the giraffe look like?"
           },
           {
             "name": "@gameA",
@@ -1775,7 +1939,23 @@
           },
           {
             "name": "Tuah",
-            "sentence": "Thanks, @user. You're smart."
+            "sentence": "That's right!"
+          },
+          {
+            "name": "Tuah",
+            "sentence": "The giraffe looks like..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...the Hijaiyah letter `Hamzah`!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "Thanks, @user."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Let's continue."
           }
         ]
       }
@@ -1799,19 +1979,59 @@
         "en": [
           {
             "name": "Alif",
-            "sentence": "Is that a duck?"
+            "sentence": "I see a duck."
           },
           {
             "name": "Tuah",
-            "sentence": "Yes. It looks like a Hijaiyah letter."
+            "sentence": "Does it quack?"
+          },
+          {
+            "name": "Alif",
+            "sentence": "I don't know."
+          },
+          {
+            "name": "Alif",
+            "sentence": "Why don't you ask it, @user?"
           },
           {
             "name": "@gameA",
             "sentence": "."
           },
           {
+            "name": "Alif",
+            "sentence": "So it doesn't quack."
+          },
+          {
             "name": "Tuah",
-            "sentence": "Thanks, @user. You're smart."
+            "sentence": "That is unexpected. But..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...that is the final Hijaiyah letter!"
+          },
+          {
+            "name": "Alif",
+            "sentence": "You're right, Tuah."
+          },
+          {
+            "name": "Alif",
+            "sentence": "The Hijaiyah letter, `Ya`..."
+          },
+          {
+            "name": "Alif",
+            "sentence": "...is the final Hijaiyah letter."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "Thank you very much, @user."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "We couldn't have done this..."
+          },
+          {
+            "name": "Tuah",
+            "sentence": "...without you."
           }
         ]
       }
