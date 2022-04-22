@@ -44,6 +44,16 @@ public class SoundManager : MonoBehaviour
         _effectsSource.PlayOneShot(clip);
     } 
 
+    public void PlaySoundStar(AudioClip clip)
+    {
+        _StarSource.PlayOneShot(clip);
+    } 
+
+    public void PlaySoundSuccess(AudioClip clip)
+    {
+        _SuccessSource.PlayOneShot(clip);
+    } 
+
     public void ToggleMusic()
     {
         _musicSource.mute = !_musicSource.mute;
