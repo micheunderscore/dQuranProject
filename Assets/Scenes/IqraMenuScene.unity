@@ -8217,7 +8217,6 @@ GameObject:
   - component: {fileID: 343027588}
   - component: {fileID: 343027590}
   - component: {fileID: 343027589}
-  - component: {fileID: 343027591}
   m_Layer: 5
   m_Name: homeButtonImg
   m_TagString: Untagged
@@ -8283,19 +8282,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 343027587}
   m_CullTransparentMesh: 1
---- !u!114 &343027591
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 343027587}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1001 &346326375
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8958,7 +8944,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pembangunan Depan
+  m_text: Coming Soon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9633,7 +9619,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Halaman Iqra'
+  m_text: Iqra' Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a899ae98387df264ab640e92c0293520, type: 2}
   m_sharedMaterial: {fileID: -5393143571130077636, guid: a899ae98387df264ab640e92c0293520, type: 2}
@@ -9958,7 +9944,7 @@ MonoBehaviour:
           m_StringArgument: MainMenuScene
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 343027591}
+      - m_Target: {fileID: 1150983396}
         m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
         m_MethodName: buttonOnClicked
         m_Mode: 1
@@ -10613,7 +10599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Tetapan
+  m_text: Settings
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11298,7 +11284,6 @@ GameObject:
   - component: {fileID: 922234465}
   - component: {fileID: 922234467}
   - component: {fileID: 922234466}
-  - component: {fileID: 922234468}
   m_Layer: 5
   m_Name: settingButtonImg
   m_TagString: Untagged
@@ -11364,19 +11349,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 922234464}
   m_CullTransparentMesh: 1
---- !u!114 &922234468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 922234464}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
 --- !u!1 &948200906
 GameObject:
   m_ObjectHideFlags: 0
@@ -16636,6 +16608,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1150983395}
+  - component: {fileID: 1150983396}
+  - component: {fileID: 1150983398}
+  - component: {fileID: 1150983397}
   m_Layer: 0
   m_Name: uiElements
   m_TagString: Untagged
@@ -16662,6 +16637,48 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1150983396
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150983394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccef727190877d240bbf1411937c092a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _clip: {fileID: 8300000, guid: 63b9a92c718640346a01b3a981f423a6, type: 3}
+--- !u!114 &1150983397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150983394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98da156d75921dd45bba34009b999f48, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonSprites:
+  - {fileID: 21300000, guid: 44b927b2129235f43b5ff274b7158fe5, type: 3}
+  - {fileID: 21300000, guid: acf00e8bae03eed4f988a1b36dec9fdb, type: 3}
+  targetButton: {fileID: 1401124091}
+--- !u!114 &1150983398
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1150983394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73d6c92683c187349a5a21bd5b85b92d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _toggleMusic: 1
 --- !u!1001 &1154350306
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17794,7 +17811,19 @@ MonoBehaviour:
           m_StringArgument: Setting
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 922234468}
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1150983396}
         m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
         m_MethodName: buttonOnClicked
         m_Mode: 1
@@ -18051,7 +18080,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 0}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1150983397}
+        m_TargetAssemblyTypeName: ButtonToggle, Assembly-CSharp
+        m_MethodName: ChangeSprite
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1150983398}
+        m_TargetAssemblyTypeName: MusicToggle, Assembly-CSharp
+        m_MethodName: Toggle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1150983396}
+        m_TargetAssemblyTypeName: PlaySoundOnStart, Assembly-CSharp
+        m_MethodName: buttonOnClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1445671015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26472,7 +26537,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Halaman Layar
+  m_text: Main Menu
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -26838,7 +26903,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pembangunan Depan
+  m_text: Coming Soon
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -27511,7 +27576,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Dalam Pembangunan
+  m_text: Toggle Volume
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
