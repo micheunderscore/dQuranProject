@@ -21,6 +21,13 @@ public class UsernameField : MonoBehaviour
 
     public void SetUsername()
     {
-        PlayerPrefs.SetString("username", inputField.text);
+        if (string.IsNullOrEmpty(inputField.text))
+        {
+            PlayerPrefs.DeleteKey("username");
+        }
+        else
+        {
+            PlayerPrefs.SetString("username", inputField.text);
+        }
     }
 }
