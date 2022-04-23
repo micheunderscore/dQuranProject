@@ -2,7 +2,8 @@ using System.Linq;
 using UnityEngine;
 using TMPro;
 
-public class GameManager : MonoBehaviour {
+public class GameManager : MonoBehaviour
+{
     public GameObject[] characters;
     public static GameManager Instance;
     // TODO: Make this work for passing data between scenes
@@ -14,30 +15,36 @@ public class GameManager : MonoBehaviour {
     public GameState pastState = GameState.Menu;
     public bool started = false;
     public int currentLevel = 1;
+    [SerializeField] private AudioClip _success, _tap, _correct;
     private float triggerTimer = 0f;
     private int score = 3;
 
-    public void Awake() {
+    public void Awake()
+    {
         Instance = this;
         // TODO: Testing purpose only. Remove all past this line in Awake()
         PlayerPrefs.SetString("username", "Mel");
         PlayerPrefs.SetString("userColor", "#000000");
     }
 
-    public void Start () {
+    public void Start()
+    {
         changeState(GameState.Dialogue);
         characters = GameObject.FindGameObjectsWithTag("Character");
     }
 
-    public void Update() {
-        if (!started) {
+    public void Update()
+    {
+        if (!started)
+        {
             dialogueManager.StartDialogue();
             TriggerCharacters();
             triggerTimer = 2f;
             started = true;
         }
 
-        switch (state) {
+        switch (state)
+        {
             case GameState.Dialogue:
             case GameState.GameB:
                 letterOutline.SetActive(false);
@@ -55,30 +62,36 @@ public class GameManager : MonoBehaviour {
         wrongBox.SetActive(state == GameState.WrongAnswer);
         gameBox.SetActive(state == GameState.GameA);
         pauseBox.transform.Find("PauseMenu").gameObject.SetActive(state == GameState.Menu);
-        
-        star1.SetActive(score>=1);
-        star2.SetActive(score>=2);
-        star3.SetActive(score==3);
+
+        star1.SetActive(score >= 1);
+        star2.SetActive(score >= 2);
+        star3.SetActive(score == 3);
         menuBox.SetActive(state == GameState.EndScreen);
         pauseBox.transform.Find("Pause").gameObject.SetActive(state != GameState.Dialogue && state != GameState.Transition);
 
         bool stillMoving = false;
 
-        foreach (GameObject character in characters) {
+        foreach (GameObject character in characters)
+        {
             stillMoving = character.GetComponent<CharacterBehavior>().moving || stillMoving;
         }
 
-        if (stillMoving && state != GameState.Transition && state != GameState.EndScreen) {
+        if (stillMoving && state != GameState.Transition && state != GameState.EndScreen)
+        {
             storedState = state;
             changeState(GameState.Transition);
-        } else if (!stillMoving && storedState != GameState.Transition) {
+        }
+        else if (!stillMoving && storedState != GameState.Transition)
+        {
             changeState(storedState);
             storedState = GameState.Transition;
         }
 
         // This is implementing trigger delay so that the user doesn't just spam through scenes
-        if (Input.touchCount > 0 && triggerTimer <= 0f && !stillMoving) {
-            switch (state) {
+        if (Input.touchCount > 0 && triggerTimer <= 0f && !stillMoving)
+        {
+            switch (state)
+            {
                 case GameState.GameA:
                 case GameState.GameB:
                 case GameState.Transition:
@@ -86,25 +99,32 @@ public class GameManager : MonoBehaviour {
                     break;
                 case GameState.WrongAnswer:
                     RetryTrigger();
+                    playTapSound();
                     break;
                 default:
                     GameTrigger();
+                    playTapSound();
                     triggerTimer = 0.5f;
                     break;
             }
-        } else {
+        }
+        else
+        {
             triggerTimer -= 1 * Time.deltaTime;
         };
     }
 
-    public void GameTrigger() {
-        if (state == GameState.EndScreen) {
+    public void GameTrigger()
+    {
+        if (state == GameState.EndScreen)
+        {
             return;
         }
 
         string nextScene = dialogueManager.DisplayNextSentence(); // TODO: Move this to the switch case brackets
 
-        switch (nextScene) {
+        switch (nextScene)
+        {
             case "@gameA":
                 changeState(GameState.GameA);
                 break;
@@ -120,18 +140,25 @@ public class GameManager : MonoBehaviour {
                 SaveSystem.CrossSceneInformation[currentLevel] = score;
                 if (currentLevel >= SaveSystem.PassedGameProgress) SaveSystem.PassedGameProgress++;
                 changeState(GameState.EndScreen);
+                playSuccessSound();
                 break;
         }
     }
 
-    public void TriggerCharacters (bool withCamera = true) {
-        foreach (GameObject character in characters) {
+    public void TriggerCharacters(bool withCamera = true)
+    {
+        foreach (GameObject character in characters)
+        {
             character.GetComponent<CharacterBehavior>().triggerMove(withCamera);
         }
     }
 
-    public void GameBTrigger () {
-        if(gameFilled != null && gameUnfilled != null && gameItem != null) {
+    public void GameBTrigger()
+    {
+        SoundManager.Instance.PlaySound(_correct);
+
+        if (gameFilled != null && gameUnfilled != null && gameItem != null)
+        {
             gameFilled.SetActive(true);
             gameUnfilled.SetActive(false);
             gameItem.SetActive(false);
@@ -139,43 +166,68 @@ public class GameManager : MonoBehaviour {
         GameTrigger();
     }
 
-    public void RightAnswerTrigger () {
+    public void RightAnswerTrigger()
+    {
+        SoundManager.Instance.PlaySound(_correct);
+
         letterFilled.SetActive(true);
-        if(optionalEnd != null && optionalStart != null) {
+        if (optionalEnd != null && optionalStart != null)
+        {
             optionalEnd.SetActive(true);
             optionalStart.SetActive(false);
         }
         GameTrigger();
     }
 
-    public void RetryTrigger () {
-        if(score != 0) {
+    public void RetryTrigger()
+    {
+        if (score != 0)
+        {
             score -= 1;
         }
         changeState(GameState.GameA);
     }
 
-    public void WrongAnswerTrigger () {
+    public void WrongAnswerTrigger()
+    {
         changeState(GameState.WrongAnswer);
     }
-    
-    private void changeState(GameState newState) {
+
+    private void changeState(GameState newState)
+    {
         state = newState;
         triggerTimer = 0.5f;
     }
 
-    public void TriggerMenu () {
-        if (pastState != GameState.Menu) {
+    public void playSuccessSound()
+    {
+        SoundManager.Instance.PlaySound(_success);
+        Debug.Log("Clicked and Sound Played");
+    }
+
+    private void playTapSound()
+    {
+        SoundManager.Instance.PlaySound(_tap);
+        Debug.Log("Tapped and Sound Played");
+    }
+
+    public void TriggerMenu()
+    {
+        if (pastState != GameState.Menu)
+        {
             state = pastState;
             pastState = GameState.Menu;
-        } else {
+        }
+        else
+        {
             pastState = state;
             state = GameState.Menu;
         }
     }
 }
 
-public enum GameState {
+public enum GameState
+{
     EndScreen,
     Dialogue,
     Transition,
