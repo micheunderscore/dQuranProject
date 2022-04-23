@@ -24,7 +24,7 @@ public class JsonReader {
     }
 
     public string GetUsername () {
-        return(PlayerPrefs.GetString("username","Jompot"));
+        return(PlayerPrefs.GetString("username","Mel"));
     }
 }
 
