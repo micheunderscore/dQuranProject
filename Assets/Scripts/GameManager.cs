@@ -22,9 +22,6 @@ public class GameManager : MonoBehaviour
     public void Awake()
     {
         Instance = this;
-        // TODO: Testing purpose only. Remove all past this line in Awake()
-        PlayerPrefs.SetString("username", "Mel");
-        PlayerPrefs.SetString("userColor", "#000000");
     }
 
     public void Start()
