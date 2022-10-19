@@ -30,91 +30,91 @@ EditorBuildSettings:
     path: Assets/Scenes/GameHome.unity
     guid: 3d197ade52b7fee43a243fef21283c47
   - enabled: 1
-    path: Assets/Scenes/GameScene1.unity
+    path: Assets/Scenes/GameScenes/GameScene1.unity
     guid: 36f8af057daf1e3449b2f165c7b8f7c3
   - enabled: 1
-    path: Assets/Scenes/GameScene2.unity
+    path: Assets/Scenes/GameScenes/GameScene2.unity
     guid: 2ca4b9466e77bf64b8f1cca9216ad5f9
   - enabled: 1
-    path: Assets/Scenes/GameScene3.unity
+    path: Assets/Scenes/GameScenes/GameScene3.unity
     guid: e916437b687f65841b78380ade44d954
   - enabled: 1
-    path: Assets/Scenes/GameScene4.unity
+    path: Assets/Scenes/GameScenes/GameScene4.unity
     guid: a5cf8ba873ba9dc4ab78f9518d2dc47f
   - enabled: 1
-    path: Assets/Scenes/GameScene5.unity
+    path: Assets/Scenes/GameScenes/GameScene5.unity
     guid: 31738de2798344f429cf1552cdb8c94c
   - enabled: 1
-    path: Assets/Scenes/GameScene6.unity
+    path: Assets/Scenes/GameScenes/GameScene6.unity
     guid: b8d010bb308f93b43a4351aacdd1f5e3
   - enabled: 1
-    path: Assets/Scenes/GameScene7.unity
+    path: Assets/Scenes/GameScenes/GameScene7.unity
     guid: 2c18bf4a0c5942d45a8b775f143a8495
   - enabled: 1
-    path: Assets/Scenes/GameScene8.unity
+    path: Assets/Scenes/GameScenes/GameScene8.unity
     guid: e53b4bc3b1877d04bb110fd4813ccc26
   - enabled: 1
-    path: Assets/Scenes/GameScene9.unity
+    path: Assets/Scenes/GameScenes/GameScene9.unity
     guid: a10fb22ac4ed58d4ab4ce37558b8631e
   - enabled: 1
-    path: Assets/Scenes/GameScene10.unity
+    path: Assets/Scenes/GameScenes/GameScene10.unity
     guid: 4d689f2e19c76504d9483529c3a39387
   - enabled: 1
-    path: Assets/Scenes/GameScene11.unity
+    path: Assets/Scenes/GameScenes/GameScene11.unity
     guid: c3bacfde5bc91f34799507c1cd6271d0
   - enabled: 1
-    path: Assets/Scenes/GameScene12.unity
+    path: Assets/Scenes/GameScenes/GameScene12.unity
     guid: 27bb99c518ede6543a09eed72cb61010
   - enabled: 1
-    path: Assets/Scenes/GameScene13.unity
+    path: Assets/Scenes/GameScenes/GameScene13.unity
     guid: 89a691a3423c8d04989d845a6510c7c3
   - enabled: 1
-    path: Assets/Scenes/GameScene14.unity
+    path: Assets/Scenes/GameScenes/GameScene14.unity
     guid: 7c4164e091f614d4e8166850ffd44529
   - enabled: 1
-    path: Assets/Scenes/GameScene15.unity
+    path: Assets/Scenes/GameScenes/GameScene15.unity
     guid: 685eea736b3737d4591794e420a635a0
   - enabled: 1
-    path: Assets/Scenes/GameScene16.unity
+    path: Assets/Scenes/GameScenes/GameScene16.unity
     guid: ae771ef73f820ed44b97e0598e1fd0ef
   - enabled: 1
-    path: Assets/Scenes/GameScene17.unity
+    path: Assets/Scenes/GameScenes/GameScene17.unity
     guid: 95033058c3ed1364685aa1cf824d793e
   - enabled: 1
-    path: Assets/Scenes/GameScene18.unity
+    path: Assets/Scenes/GameScenes/GameScene18.unity
     guid: 9d01533b830bff74ea26976ed3ecac85
   - enabled: 1
-    path: Assets/Scenes/GameScene19.unity
+    path: Assets/Scenes/GameScenes/GameScene19.unity
     guid: 74aa897fc5a4251428a18027bfb250e6
   - enabled: 1
-    path: Assets/Scenes/GameScene20.unity
+    path: Assets/Scenes/GameScenes/GameScene20.unity
     guid: 1a82e4d6606cc76448792d1ab34b40db
   - enabled: 1
-    path: Assets/Scenes/GameScene21.unity
+    path: Assets/Scenes/GameScenes/GameScene21.unity
     guid: 2afca9b479311de4c80fd28e42ee1946
   - enabled: 1
-    path: Assets/Scenes/GameScene22.unity
+    path: Assets/Scenes/GameScenes/GameScene22.unity
     guid: c608ad1e1e9a0874bb893333f88a47c2
   - enabled: 1
-    path: Assets/Scenes/GameScene23.unity
+    path: Assets/Scenes/GameScenes/GameScene23.unity
     guid: 83c74927197bc4e4ea96a403c1a57863
   - enabled: 1
-    path: Assets/Scenes/GameScene24.unity
+    path: Assets/Scenes/GameScenes/GameScene24.unity
     guid: 5bf3727b338203e4d9fae7981b42565d
   - enabled: 1
-    path: Assets/Scenes/GameScene25.unity
+    path: Assets/Scenes/GameScenes/GameScene25.unity
     guid: f76c6829ac385e342a59a25f56d51f89
   - enabled: 1
-    path: Assets/Scenes/GameScene26.unity
+    path: Assets/Scenes/GameScenes/GameScene26.unity
     guid: c6edec864a51680439eedf18d22f0f3d
   - enabled: 1
-    path: Assets/Scenes/GameScene27.unity
+    path: Assets/Scenes/GameScenes/GameScene27.unity
     guid: 59a6d8f215cb6144b88b511da7abdc74
   - enabled: 1
-    path: Assets/Scenes/GameScene28.unity
+    path: Assets/Scenes/GameScenes/GameScene28.unity
     guid: b6781a694aef4234a9668e80ede304fb
   - enabled: 1
-    path: Assets/Scenes/GameScene29.unity
+    path: Assets/Scenes/GameScenes/GameScene29.unity
     guid: aadcc39db4838b94298ad10c89fbbcf7
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: a4a4ac245a7d4094cbf317af61d058f5, type: 2}

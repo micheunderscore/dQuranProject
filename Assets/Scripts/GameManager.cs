@@ -116,7 +116,7 @@ public class GameManager : MonoBehaviour {
             case "@end":
             default:
                 TriggerCharacters(false);
-                SaveSystem.CrossSceneInformation[currentLevel] = score;
+                SaveSystem.CrossSceneInformation[currentLevel - 1] = score;
                 if (currentLevel >= SaveSystem.PassedGameProgress) SaveSystem.PassedGameProgress++;
                 changeState(GameState.EndScreen);
                 playSuccessSound();
@@ -170,12 +170,10 @@ public class GameManager : MonoBehaviour {
 
     public void playSuccessSound() {
         SoundManager.Instance.PlaySound(_success);
-        Debug.Log("Clicked and Sound Played");
     }
 
     private void playTapSound() {
         SoundManager.Instance.PlaySound(_tap);
-        Debug.Log("Tapped and Sound Played");
     }
 
     public void TriggerMenu() {

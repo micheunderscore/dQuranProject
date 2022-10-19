@@ -1,32 +1,28 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class sceneManager : MonoBehaviour
-{
+public class sceneManager : MonoBehaviour {
     private int sceneToContinue;
     public int currrentSceneIndex;
 
-    void Start()
-    {
+    void Start() {
         sceneToContinue = PlayerPrefs.GetInt("SavedScene");
         Debug.Log("Your last scene is " + sceneToContinue);
     }
 
-    public void LoadToScene (string sceneName) 
-    {  
+    public void LoadToScene(string sceneName) {
         currrentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         PlayerPrefs.SetInt("SavedScene", currrentSceneIndex);
-        Debug.Log("Your scene is " + currrentSceneIndex);
+        // Debug.Log("Your scene is " + currrentSceneIndex);
 
         SceneManager.LoadScene(sceneName);
     }
 
-    public void ReloadCurrentScene () {
+    public void ReloadCurrentScene() {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
-    public void ContinueScene()
-    {
+    public void ContinueScene() {
         if (sceneToContinue >= 0)
             SceneManager.LoadScene(sceneToContinue);
 
@@ -34,8 +30,7 @@ public class sceneManager : MonoBehaviour
             return;
     }
 
-    public void ExitDQuran()
-    {
+    public void ExitDQuran() {
         Application.Quit();
         Debug.Log("Go Away!");
     }
