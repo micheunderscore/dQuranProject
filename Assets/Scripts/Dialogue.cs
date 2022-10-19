@@ -8,6 +8,7 @@ public class Dialogues {
 
 [Serializable]
 public class Dialogue {
+    public string title;
     public Language languages;
 }
 

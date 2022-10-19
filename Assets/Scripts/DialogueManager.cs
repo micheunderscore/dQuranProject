@@ -4,8 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class DialogueManager : MonoBehaviour
-{
+public class DialogueManager : MonoBehaviour {
     public List<Vector3> uiPositions = new List<Vector3>();
     private Queue<Dialog> sentences = new Queue<Dialog>();
     private string path;
@@ -17,21 +16,23 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogBox;
     public GameManager gameManager;
 
-    void Awake () {
+    void Awake() {
         username = jsonReader.GetUsername();
     }
-    
+
     void Start() {
         jsonString = jsonReader.Read("Dialogues" + Path.DirectorySeparatorChar + "levels.json");
         dialogue = JsonUtility.FromJson<Dialogues>(jsonString).dialogues[gameManager.currentLevel - 1];
 
-        Debug.Log(dialogue.languages.en[0].sentence);
+        // Debug.Log(dialogue.languages.en[0].sentence);
+
+        gameManager.letterTitle.text = dialogue.title;
 
         dialogText = dialogBox.transform.Find("TextBar").transform.Find("DialogText").GetComponent<TextMeshProUGUI>();
         namePlate = dialogBox.transform.Find("TextBar").transform.Find("NamePlate").GetComponent<TextMeshProUGUI>();
     }
 
-    public void StartDialogue () {
+    public void StartDialogue() {
         sentences.Clear();
         foreach (Dialog sentence in dialogue.languages.en) { // TODO: Modify when Change Language screen is implemented
             sentences.Enqueue(sentence);
@@ -39,14 +40,14 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
-    public string DisplayNextSentence () {
+    public string DisplayNextSentence() {
         if (sentences.Count == 0) {
             EndDialogue();
             return "@end";
         }
 
         Dialog sentence = sentences.Dequeue();
-        
+
         if (Regex.IsMatch(sentence.name, "@game")) {
             return sentence.name;
         } else {
@@ -55,7 +56,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public void DisplayText (Dialog conversation) {
+    public void DisplayText(Dialog conversation) {
         int index = 0;
         switch (conversation.name) {
             case "Alif":
@@ -73,7 +74,7 @@ public class DialogueManager : MonoBehaviour
         namePlate.text = "- " + conversation.name;
     }
 
-    public void EndDialogue () {
+    public void EndDialogue() {
         // TODO: Remove this if no use
     }
 }
