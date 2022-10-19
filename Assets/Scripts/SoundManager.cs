@@ -17,7 +17,6 @@ public class SoundManager : MonoBehaviour {
 
     void Update() {
         Value = SceneManager.GetActiveScene().buildIndex;
-        // Debug.Log("Your scene is " + Value);
     }
 
     void Awake() {

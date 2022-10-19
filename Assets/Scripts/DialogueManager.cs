@@ -24,8 +24,6 @@ public class DialogueManager : MonoBehaviour {
         jsonString = jsonReader.Read("Dialogues" + Path.DirectorySeparatorChar + "levels.json");
         dialogue = JsonUtility.FromJson<Dialogues>(jsonString).dialogues[gameManager.currentLevel - 1];
 
-        // Debug.Log(dialogue.languages.en[0].sentence);
-
         gameManager.letterTitle.text = dialogue.title;
 
         dialogText = dialogBox.transform.Find("TextBar").transform.Find("DialogText").GetComponent<TextMeshProUGUI>();

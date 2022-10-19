@@ -6,8 +6,6 @@ public class JsonReader {
         string filePath = Path.Combine(Application.streamingAssetsPath + Path.DirectorySeparatorChar, route);
         string jsonString = "";
 
-        Debug.Log("UNITY:" + System.Environment.NewLine + filePath);
-
 #if UNITY_EDITOR || UNITY_IOS
         jsonString = File.ReadAllText(filePath);
 
@@ -17,8 +15,6 @@ public class JsonReader {
         }
         jsonString = reader.text;
 #endif
-
-        // Debug.Log ("Data loaded, dictionary contains: " + jsonString);
 
         return (jsonString);
     }
