@@ -44,6 +44,7 @@ public class SingletonPersistent<T> : MonoBehaviour where T : Component {
         }
     }
 
+    // Not Used
     // public virtual void Awake() {
     //     if (_instance == null) {
     //         _instance = this as T;

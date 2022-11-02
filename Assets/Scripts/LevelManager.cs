@@ -14,11 +14,11 @@ public class LevelManager : MonoBehaviour {
         LevelData data = SaveSystem.LoadLevel();
         levelScores = data.levelScores;
         gameProgress = data.gameProgress;
-        if (SaveSystem.PassedGameProgress == 0) SaveSystem.PassedGameProgress = data.gameProgress;
     }
 
     public void Start() {
         int[] passedData = SaveSystem.CrossSceneInformation;
+
         if (gameProgress < SaveSystem.PassedGameProgress) {
             gameProgress = SaveSystem.PassedGameProgress;
         }
@@ -28,18 +28,19 @@ public class LevelManager : MonoBehaviour {
                 levelScores[i] = passedData[i];
             }
         }
-        int count = 1;
+        int count = 0;
         // Load progress on pages
-        foreach (Transform page in pages){
+        foreach (Transform page in pages) {
             foreach (Transform child in page.transform.Find("LevelPanel")) {
                 child.gameObject.GetComponentInChildren<Star>().score = levelScores[count];
-                child.gameObject.GetComponent<Button>().interactable = count <= gameProgress;
+                child.gameObject.GetComponent<Button>().interactable = count < gameProgress;
                 count += 1;
             }
         }
     }
 
     public void OnDestroy() {
+        SaveSystem.PassedGameProgress = gameProgress;
         SaveSystem.SaveLevels(this);
     }
 
